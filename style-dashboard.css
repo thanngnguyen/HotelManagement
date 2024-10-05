@@ -1,21 +1,68 @@
-.nguoidung {
-  margin-left: 20px;
-  float: left;
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  height: 32px;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262626;
+  color: #ffff;
 }
 .login-admin {
-  float: left;
+  font-size: 12px;
 }
 .rmt {
-  display: inline-block;
-}
-nav > ul > li {
-  list-style-type: none;
+  color: #ffff;
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  align-content: center;
 }
 nav {
-  width: 200px;
-  margin-left: -20px;
+  display: flex;
+  float: left;
+  width: 15%;
+}
+.navbar-header {
+  background: linear-gradient(
+    90deg,
+    rgba(233, 203, 75, 1) 0%,
+    rgba(225, 183, 58, 1) 16.6%,
+    rgba(192, 139, 27, 1) 33.3%,
+    rgba(185, 117, 8, 1) 50%,
+    rgba(192, 139, 27, 1) 66.6%,
+    rgba(225, 183, 58, 1) 83.3%,
+    rgba(233, 203, 75, 1) 100%
+  );
+  text-align: center;
+  justify-content: center;
+  float: left;
+  width: 85%;
+  height: 35px;
+  font-size: 27px;
+  color: #ffff;
+}
+.ulnav {
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline-start: 0;
+}
+.ulnav > .linav > a {
+  text-decoration: none;
+  color: black;
 }
 .navbar {
   background-color: #f2f2f2;
-  margin: 3px;
+  height: 35px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.imgnav {
+  padding-right: 10px;
 }
