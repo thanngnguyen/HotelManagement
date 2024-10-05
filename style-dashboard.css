@@ -1,0 +1,21 @@
+.nguoidung {
+  margin-left: 20px;
+  float: left;
+}
+.login-admin {
+  float: left;
+}
+.rmt {
+  display: inline-block;
+}
+nav > ul > li {
+  list-style-type: none;
+}
+nav {
+  width: 200px;
+  margin-left: -20px;
+}
+.navbar {
+  background-color: #f2f2f2;
+  margin: 3px;
+}
