@@ -7,24 +7,25 @@ header {
   height: 32px;
   width: 100%;
   top: 0;
-  align-items: center;
   justify-content: space-between;
   background-color: #262626;
   color: #ffff;
 }
+.rmt > .nguoidung > b {
+  align-items: end;
+}
 .login-admin {
-  font-size: 12px;
+  font-size: 11px;
+}
+.login-admin .adminlg {
+  text-decoration: none;
+  margin-right: 10px;
 }
 .rmt {
   color: #ffff;
   text-decoration: none;
   padding: 0px 20px 0px 20px;
   align-content: center;
-}
-nav {
-  display: flex;
-  float: left;
-  width: 15%;
 }
 .navbar-header {
   background: linear-gradient(
@@ -46,16 +47,40 @@ nav {
   color: #ffff;
 }
 .ulnav {
+  background-color: #ffff;
   list-style-type: none;
-  width: 100%;
+  width: 15%;
+  padding: 0;
   margin: 0 auto;
-  padding-inline-start: 0;
+  float: left;
+  height: 100%;
 }
-.ulnav > .linav > a {
+.ulnav .linav a {
+  display: block;
   text-decoration: none;
   color: black;
+  text-align: left;
 }
-.navbar {
+.ulnav .linav a .navbar-child {
+  background-color: #cacaca;
+  padding-left: 30px;
+}
+.ulnav .linav a :hover {
+  background-color: #b2dcff;
+}
+.ulnav .linav .ulnav-child {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.ulnav .linav .ulnav-child .linav-child a {
+  font-size: 14px;
+}
+.ulnav .linav.active .ulnav-child {
+  display: block;
+}
+.navbarr {
   background-color: #f2f2f2;
   height: 35px;
   margin-bottom: 3px;
@@ -65,4 +90,42 @@ nav {
 }
 .imgnav {
   padding-right: 10px;
+}
+.row {
+  width: 85%;
+  padding: 20px;
+  float: left;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+.content-main {
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 4px 4px 8px #afafaf;
+}
+
+.col-6 {
+  width: 48%;
+  height: 500px;
+}
+.col-12 {
+  height: 500px;
+  width: 97.6%;
+}
+.Trongtuan {
+  height: 200px;
+}
+.Doanh-thu {
+  display: inline-block;
+  font-size: 30px;
+}
+#myPieChart {
+  float: right;
+}
+.content-main p {
+  margin-bottom: 0;
 }
