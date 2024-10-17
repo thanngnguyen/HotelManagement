@@ -6,7 +6,6 @@ header {
   display: flex;
   height: 32px;
   width: 100%;
-  top: 0;
   justify-content: space-between;
   background-color: #262626;
   color: #ffff;
@@ -88,6 +87,9 @@ header {
   align-items: center;
   padding-left: 15px;
 }
+.navbar-child {
+  margin-bottom: 1px;
+}
 .imgnav {
   padding-right: 10px;
 }
@@ -120,12 +122,46 @@ header {
   height: 200px;
 }
 .Doanh-thu {
-  display: inline-block;
+  /* display: inline-block; */
+  margin-top: 30px;
   font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
 }
 #myPieChart {
   float: right;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.dttt {
+  display: inline;
 }
 .content-main p {
   margin-bottom: 0;
+}
+.ti-le-tang {
+  display: inline;
+  width: 50px;
+  height: 20px;
+  border: none;
+  background-color: #cdffd2;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  position: absolute;
+  margin-left: 115px;
+}
+.ti-le-giam {
+  display: none;
+  width: 50px;
+  height: 20px;
+  border: none;
+  background-color: #ff6868;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  position: absolute;
+  margin-left: 115px;
 }
