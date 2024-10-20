@@ -26,7 +26,7 @@ nav {
 }
 main {
   width: 80%;
-  height: 200vh;
+  height: auto;
   display: block;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
@@ -34,8 +34,8 @@ main {
 }
 footer {
   width: 100%;
-  height: auto;
-  background-color: blue;
+  background-color: #000763;
+  color: #ffffff;
 }
 .contact {
   width: 30%;
@@ -135,12 +135,11 @@ h6 {
 }
 
 .input-group {
-  max-width: 100px;
+  max-width: 120px;
 }
 .input-group input {
   text-align: center;
 }
-
 .tong-quan {
   padding: 10px;
   background-color: #ffffff;
@@ -169,6 +168,7 @@ h6 {
 .cac-hang-phong > h3 {
   display: inline;
   margin: 30px;
+  font-weight: bold;
 }
 .gia-phong-tu-ngay {
   display: inline-block;
@@ -179,6 +179,180 @@ h6 {
   max-height: 25px;
   color: #ffffff;
 }
-.card-main {
+
+/* băng chuyền các hạng phòng*/
+.bang-chuyen {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+.bang-chuyen-track {
   display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.bang-chuyen-item {
+  min-width: 31.5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.bang-chuyen-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.card-image {
+  width: 100%;
+  overflow: hidden;
+}
+.card-image img {
+  transition: transform 0.3s ease;
+}
+.bang-chuyen-item:hover .card-image img {
+  transform: scale(1.2);
+}
+.bang-chuyen-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.bang-chuyen-button.left {
+  left: 10px;
+  background-color: #ffba22;
+  opacity: 60%;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+.bang-chuyen-button.right {
+  right: 10px;
+  background-color: #ffba22;
+  opacity: 60%;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+.dat-ngay {
+  width: 90px;
+  background-color: #000763;
+  height: 35px;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+}
+a > .dat-ngay {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.card-text {
+  margin: 20px;
+}
+.gia-tien {
+  color: #ffba22;
+  font-size: 22px;
+}
+.uu-dai {
+  padding: 40px;
+}
+.uu-dai-01 {
+  width: 31.5%;
+}
+.img-uu-dai {
+  width: 355px;
+}
+.text-uu-dai {
+  text-align: justify;
+}
+.dich-vu {
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+/* .header-dich-vu {
+  height: 80px;
+} */
+.ul-dvu {
+  list-style-type: none;
+}
+.li-dvu {
+  float: left;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.li-dvu:hover a {
+  color: #ffba22;
+}
+.li-dvu > a {
+  text-decoration: none;
+}
+.xem-chi-tiet {
+  width: 93.6%;
+  height: 35px;
+  margin: 0 10px 0 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: #ffffff;
+  font-weight: 500;
+}
+.xem-chi-tiet:hover {
+  background-color: #ffba22;
+  color: #ffffff;
+}
+.dvu {
+  display: none;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+#Nha-hang {
+  display: block;
+}
+.row {
+  padding: 40px;
+}
+.quy-dinh {
+  padding: 40px;
+}
+.danh-gia {
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+/* 5 sao */
+.star-rating {
+  margin-bottom: 10px;
+}
+
+.star-rating span {
+  font-size: 20px;
+  color: gold;
+}
+.col-2 {
+  font-size: 70px;
+  color: green;
+}
+.vi-tri {
+  padding: 40px;
+}
+.footer {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.lien-he > a {
+  text-decoration: none;
+  color: #ffffff;
 }

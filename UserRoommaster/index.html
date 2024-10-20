@@ -25,7 +25,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
@@ -76,16 +75,16 @@
             <a class="a-nav" href="#Hang-Phong">HẠNG PHÒNG</a>
           </li>
           <li class="linav">
-            <a class="a-nav" href="#">ƯU ĐÃI</a>
+            <a class="a-nav" href="#Uu-dai">ƯU ĐÃI</a>
           </li>
           <li class="linav">
-            <a class="a-nav" href="#">DỊCH VỤ</a>
+            <a class="a-nav" href="#Dich-vu">DỊCH VỤ</a>
           </li>
           <li class="linav">
-            <a class="a-nav" href="#">QUY ĐỊNH</a>
+            <a class="a-nav" href="#Quy-dinh">QUY ĐỊNH</a>
           </li>
           <li class="linav">
-            <a class="a-nav" href="#">ĐÁNH GIÁ</a>
+            <a class="a-nav" href="#Danh-gia">ĐÁNH GIÁ</a>
           </li>
         </ul>
       </div>
@@ -127,23 +126,23 @@
           ></button>
         </div>
         <div class="carousel-inner" data-bs-ride="carousel">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item item-dvu active" data-bs-interval="10000">
             <img src="/image/slide01.png" class="d-block w-100" alt="Slide 1" />
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item item-dvu" data-bs-interval="2000">
             <img src="/image/slide02.png" class="d-block w-100" alt="Slide 2" />
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item item-dvu">
             <img src="/image/slide03.png" class="d-block w-100" alt="Slide 3" />
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item item-dvu">
             <img src="/image/slide04.png" class="d-block w-100" alt="Slide 4" />
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item item-dvu">
             <img src="/image/slide05.png" class="d-block w-100" alt="Slide 5" />
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
@@ -183,33 +182,47 @@
                 />
                 <ul class="dropdown-menu" aria-labelledby="roomTypeInput">
                   <li>
-                    <a class="dropdown-item" href="#">Phòng Deluxe Twin</a>
+                    <a class="dropdown-item item-dvu" href="#"
+                      >Phòng Deluxe Twin</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Phòng Deluxe King</a>
+                    <a class="dropdown-item item-dvu" href="#"
+                      >Phòng Deluxe King</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Phòng Deluxe Triple</a>
+                    <a class="dropdown-item item-dvu" href="#"
+                      >Phòng Deluxe Triple</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Phòng Grand Suite</a>
+                    <a class="dropdown-item item-dvu" href="#"
+                      >Phòng Grand Suite</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item item-dvu" href="#"
                       >Phòng Premium Deluxe King</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Apartment</a></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item item-dvu" href="#">Apartment</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item item-dvu" href="#"
                       >Phòng Premium Deluxe Triple</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Phòng Superior Twin</a>
+                    <a class="dropdown-item item-dvu" href="#"
+                      >Phòng Superior Twin</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Phòng Superior Triple</a>
+                    <a class="dropdown-item item-dvu" href="#"
+                      >Phòng Superior Triple</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -329,25 +342,460 @@
         <div class="gia-phong-tu-ngay">
           <span>Giá phòng từ ngày: 17/10/2024 ~ 25/10/2024</span>
         </div>
-        <div class="card-main">
-          <div class="card" style="width: 18rem">
-            <img src="/image/slide04.png" class="card-img-top" alt="card-01" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="bang-chuyen">
+          <button class="bang-chuyen-button left" onclick="moveLeft()">
+            &#10094;
+          </button>
+          <div class="bang-chuyen-track">
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide01.png" alt="Card 1" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Deluxe Twin</h5>
+                <pre>37m<sup>2</sup>      |     2 Giường</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,288,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide02.png" alt="Card 2" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Deluxe King</h5>
+                <pre>37m<sup>2</sup>      |     1 Giường</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,588,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide03.png" alt="Card 3" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Deluxe Triple</h5>
+                <pre>37m<sup>2</sup>      |     3 Giường</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,288,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide04.png" alt="Card 4" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Grand Suite</h5>
+                <pre>74m<sup>2</sup>      |     1 Giường đôi</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,988,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide05.png" alt="Card 5" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Premium Deluxe King</h5>
+                <pre>37m<sup>2</sup>      |     2 Giường King size</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,588,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide01.png" alt="Card 6" />
+              </div>
+              <div class="card-text">
+                <h5>Apartment</h5>
+                <pre>140m<sup>2</sup>      |     3 Giường đôi</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">2,588,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide02.png" alt="Card 7" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Premium Deluxe Triple</h5>
+                <pre>57m<sup>2</sup>      |     3 Giường đơn</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,978,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide03.png" alt="Card 8" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Superior Twin</h5>
+                <pre>35m<sup>2</sup>      |     2 Giường đơn</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,288,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+            <div class="bang-chuyen-item item-dvu">
+              <div class="card-image">
+                <img src="/image/slide04.png" alt="Card 9" class="card-image" />
+              </div>
+              <div class="card-text">
+                <h5>Phòng Superior Triple</h5>
+                <pre>57m<sup>2</sup>   |     1 Giường đôi, 1 Giường đơn</pre>
+                <p>
+                  Chỉ từ <strong class="gia-tien">1,988,000 VNĐ</strong> / đêm
+                </p>
+                <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
+              </div>
+            </div>
+          </div>
+          <button class="bang-chuyen-button right" onclick="moveRight()">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <div class="uu-dai" id="Uu-dai">
+        <h3>ƯU ĐÃI DÀNH CHO BẠN</h3>
+        <div class="uu-dai-01">
+          <img class="img-uu-dai" src="/image/uu-dai-01.png" alt="uu dai" />
+          <p class="text-uu-dai">
+            [NIGHT DEAL| KHU VỰC HÀ NỘI - HẠ LONG] - Ưu đãi lên đến 75% giá
+            phòng, khung giờ 18h00 - 06h00 Chỉ từ 1,026,000 VNĐ /phòng/đêm - 2
+            Người lớn - 0 Trẻ em - 2 Em bé
+          </p>
+        </div>
+      </div>
+      <div class="dich-vu" id="Dich-vu">
+        <h3>DỊCH VỤ VÀ TIỆN TÍCH</h3>
+        <!-- <div class="header-dich-vu"> -->
+        <ul class="ul-dvu">
+          <li class="li-dvu">
+            <a href="#Nha-hang" onclick="DichVu('Nha-hang')">Nhà hàng & Bar</a>
+          </li>
+          <li class="li-dvu">
+            <a href="#Phong-hop" onclick="DichVu('Phong-hop')"
+              >Phòng họp & Hội nghị</a
+            >
+          </li>
+          <li class="li-dvu">
+            <a href="#Dich-vu-khach-san" onclick="DichVu('Dich-vu-khach-san')"
+              >Dịch vụ khách sạn</a
+            >
+          </li>
+        </ul>
+        <!-- </div> -->
+        <div class="dvu" id="Nha-hang">
+          <div class="bang-chuyen-track">
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/nha-hang-01.png" alt="Card 01" />
+              </div>
+              <div class="card-text">
+                <h3>Mandarine</h3>
+                <b>Giờ mở cửa: </b>
+                <i>10:00 - 22:00</i><br />
+                <b>Sức chứa: </b>
+                <i>70 khách</i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/nha-hang-02.png" alt="Card 02" />
+              </div>
+              <div class="card-text">
+                <h3>Li Bai</h3>
+                <b>Giờ mở cửa: </b>
+                <i>10:00 - 22:00</i><br />
+                <b>Sức chứa: </b>
+                <i>60 khách</i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/quay-bar.png" alt="Card 03" />
+              </div>
+              <div class="card-text">
+                <h3>NCT's Bar</h3>
+                <b>Giờ mở cửa: </b>
+                <i>10:00 - 00:00</i><br />
+                <b>Sức chứa: </b>
+                <i>40 khách</i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
             </div>
           </div>
         </div>
+        <div class="dvu" id="Phong-hop">
+          <div class="bang-chuyen-track">
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/nha-hang-01.png" alt="Card 01" />
+              </div>
+              <div class="card-text">
+                <h3>The Planer</h3>
+                <b>Vị trí: </b>
+                <i>Tầng 3</i><br />
+                <b>Sức chứa: </b>
+                <i>170 khách</i><br />
+                <b>Diện tích: </b>
+                <i>120m<sup>2</sup></i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/nha-hang-02.png" alt="Card 02" />
+              </div>
+              <div class="card-text">
+                <h3>The Bliss</h3>
+                <b>Vị trí: </b>
+                <i>Tầng 6</i><br />
+                <b>Sức chứa: </b>
+                <i>120 khách</i>
+                <br />
+                <b>Diện tích: </b>
+                <i>103m<sup>2</sup></i>
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/quay-bar.png" alt="Card 03" />
+              </div>
+              <div class="card-text">
+                <h3>Riverside Palace</h3>
+                <b>Vị trí: </b>
+                <i>Tầng 2</i><br />
+                <b>Sức chứa: </b>
+                <i>140 khách</i>
+                <br />
+                <b>Diện tích: </b>
+                <i>125m<sup>2</sup></i>
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="dvu" id="Dich-vu-khach-san">
+          <div class="bang-chuyen-track">
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/nha-hang-01.png" alt="Card 01" />
+              </div>
+              <div class="card-text">
+                <h3>Spa & Massage</h3>
+                <b>Giờ mở cửa: </b>
+                <i>10:00 - 24:00</i><br />
+                <b>Vị trí: </b>
+                <i>Tầng 3</i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/nha-hang-02.png" alt="Card 02" />
+              </div>
+              <div class="card-text">
+                <h3>Fitness Center</h3>
+                <b>Giờ mở cửa: </b>
+                <i>10:00 - 22:00</i><br />
+                <b>Vị trí: </b>
+                <i>Tầng 5</i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+            <div class="bang-chuyen-item">
+              <div class="card-image">
+                <img src="/image/quay-bar.png" alt="Card 03" />
+              </div>
+              <div class="card-text">
+                <h3>Dịch vụ khác</h3>
+                <b>Giờ mở cửa: </b>
+                <i>06:00 - 24:00</i><br />
+                <b>Vị trí: </b>
+                <i>Tầng 4</i>
+                <br />
+              </div>
+              <a href="#"><button class="xem-chi-tiet">Xem chi tiết</button></a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <h5>CÁC DỊCH VỤ & TIỆN ÍCH KHÁC</h5>
+        <div class="row">
+          <div class="col-4">
+            <h6>Dịch vụ lễ tân</h6>
+            <ul>
+              <li>Nhận/trả phòng riêng</li>
+              <li>Giữ hành lý</li>
+              <li>Lễ tân 24 giờ</li>
+              <li>Thu đổi ngoại tệ</li>
+            </ul>
+            <h6>Chỗ đậu xe</h6>
+            <ul>
+              <li>
+                Có chỗ đỗ xe công cộng miễn phí dành cho khách sử dụng dịch vụ
+              </li>
+            </ul>
+            <h6>An ninh</h6>
+            <ul>
+              <li>Báo động an ninh</li>
+              <li>Két an toàn</li>
+            </ul>
+            <h6>Internet</h6>
+          </div>
+          <div class="col-4">
+            <h6>Chăm sóc sức khỏe</h6>
+            <ul>
+              <li>Trung tâm Spa & chăm sóc sức khoẻ</li>
+              <li>Phòng xông hơi</li>
+              <li>Massage</li>
+              <li>Bồn tắm nóng/bể sục (jacuzzi)</li>
+              <li>Trung tâm thể dục</li>
+            </ul>
+            <h6>Phòng tắm</h6>
+            <ul>
+              <li>Giấy vệ sinh</li>
+              <li>Bồn tắm hoặc vòi sen</li>
+              <li>Dép</li>
+              <li>Nhà vệ sinh</li>
+              <li>Đồ vệ sinh cá nhân miễn phí</li>
+              <li>Áo choàng tắm</li>
+              <li>Bồn tắm</li>
+              <li>Vòi hoa sen</li>
+            </ul>
+            <h6>Dịch vụ giặt ủi</h6>
+            <ul>
+              <li>Dọn phòng hàng ngày</li>
+              <li>Dịch vụ là (ủi)</li>
+              <li>Giặt ủi</li>
+              <li>Giặt khô</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h6>Dịch vụ doanh nhân</h6>
+            <h6>Dịch vụ ăn uống</h6>
+            <ul>
+              <li>Nhà hàng Mandarine</li>
+              <li>Nhà hàng Li Bai</li>
+              <li>NCT's Bar</li>
+              <li>Starbucks</li>
+              <li>Haidilao</li>
+              <li>Highland coffe</li>
+              <li>Các dịch vụ order khác</li>
+            </ul>
+            <h6>Nhà bếp</h6>
+            <h6>Truyền thông và Công nghệ</h6>
+            <h6>Tiện ích trong phòng</h6>
+          </div>
+        </div>
       </div>
-      <div class="dich-vu"></div>
-      <div class="uu-dai"></div>
-      <div class="quy-dinh"></div>
-      <div class="danh-gia"></div>
+      <div class="quy-dinh" id="Quy-dinh">
+        <h3>CÁC QUY ĐỊNH CỦA KHÁCH SẠN</h3>
+        <ul>
+          <li>Trẻ em và giường phụ +</li>
+          <li>Quy định khi nhận / trả phòng</li>
+          <li>Các quy định khác</li>
+        </ul>
+      </div>
+      <div class="danh-gia" id="Danh-gia">
+        <h3>ĐÁNH GIÁ CỦA KHÁCH HÀNG VỀ ROOMMASTER LUXURY</h3>
+        <div class="review row">
+          <h2 class="col-2">4/5</h2>
+          <div class="star-rating col-3">
+            <h5>Rất tốt</h5>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+            <!-- Ngôi sao trống -->
+            <p>150 đánh giá</p>
+          </div>
+          <div class="star-rating col-4">
+            <b>Vị trí</b>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <br />
+            <p>-------------</p>
+            <b>Sạch sẽ</b>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+          </div>
+          <div class="star-rating col-3">
+            <b>Dịch vụ</b>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+            <br />
+            <p>-------------</p>
+            <b>Giá tiền</b>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+          </div>
+        </div>
+      </div>
+      <div class="vi-tri"><h3>VỊ TRÍ</h3></div>
     </main>
-    <footer>Footer</footer>
+    <footer>
+      <div class="footer">
+        <div class="ho-tro-khach-hang col-4">
+          <h4>Hỗ trợ khách hàng</h4>
+          <p>Hướng dẫn chọn phòng</p>
+          <p>Hướng dẫn đặt phòng</p>
+          <p>Hướng dẫn thanh toán</p>
+        </div>
+        <div class="lien-he col-4">
+          <h4>Liên hệ</h4>
+          <a href="#"><p>Email liên hệ</p></a>
+          <a href="#"><p>+1900-1010</p></a>
+          <a href="#"><p>Liên hệ qua Fanpage</p></a>
+        </div>
+        <div class="dieu-khoan-dvu col-4">
+          <h4>Điều khoản dịch vụ</h4>
+          <p>Điều khoản chung</p>
+          <p>Quy định chung</p>
+          <p>Quy định về thanh toán</p>
+          <p>Quy định về xác nhận thông tin đặt phòng</p>
+          <p>Chính sách quyền riêng tư</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
