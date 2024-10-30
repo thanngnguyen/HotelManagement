@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm Tra Mật Khẩu</title>
+  </head>
+  <body>
+    <label for="password">Nhập mật khẩu:</label>
+    <input type="password" id="password" name="password" />
+    <button onclick="checkPassword()">Kiểm tra mật khẩu</button>
+
+    <p id="message"></p>
+
+    <script>
+      function checkPassword() {
+        const password = document.getElementById("password").value;
+        const message = document.getElementById("message");
+
+        // Biểu thức regex kiểm tra yêu cầu của mật khẩu
+        const hasUpperCase = /[A-Z]/.test(password);
+        const hasLowerCase = /[a-z]/.test(password);
+        const hasNumber = /\d/.test(password);
+        const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+        // Kiểm tra xem mật khẩu có đáp ứng tất cả các yêu cầu không
+        if (password.length < 8) {
+          message.textContent = "Mật khẩu phải có ít nhất 8 ký tự.";
+          message.style.color = "red";
+        } else if (
+          !hasUpperCase ||
+          !hasLowerCase ||
+          !hasNumber ||
+          !hasSpecialChar
+        ) {
+          message.textContent =
+            "Mật khẩu phải bao gồm chữ in hoa, chữ thường, số và ký tự đặc biệt.";
+          message.style.color = "red";
+        } else {
+          message.textContent = "Mật khẩu hợp lệ.";
+          message.style.color = "green";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/image/slide03.png) no-repeat center center/cover;
+  color: white;
+}
+.container {
+  display: flex;
+  padding: 10px;
+  width: 1000px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.right {
+  padding: 30px;
+  margin: 0 auto;
+  color: black;
+}
+
+.img-logo > img {
+  width: 120px;
+}
+.right h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 40px;
+  color: #120085;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carousel-item > img {
+  border-radius: 10px;
+}
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+.form-control {
+  margin-bottom: 15px;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #120085;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #dfbd15;
+  color: #ffff;
+}
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.social-login button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  width: 48%;
+  background-color: #0000;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  color: #120085;
+  font-weight: bold;
+  text-decoration: none;
+}

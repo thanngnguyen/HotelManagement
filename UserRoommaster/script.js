@@ -1,3 +1,22 @@
+const lgname = document.getElementById("lgname");
+const storedUsername = localStorage.getItem("username");
+if (storedUsername) {
+  lgname.innerHTML = `<i class="fas fa-user-circle"></i> ${storedUsername}`;
+}
+
+const linknav = document.querySelectorAll(".linav");
+
+// Thêm sự kiện click cho từng liên kết
+linknav.forEach((links) => {
+  links.addEventListener("click", function () {
+    // Xóa lớp "clicked" khỏi tất cả liên kết khác (nếu có)
+    linknav.forEach((l) => l.classList.remove("li-after"));
+
+    // Thêm lớp "clicked" cho liên kết đã được nhấn
+    this.classList.add("li-after");
+  });
+});
+
 document.getElementById("check-in").addEventListener("change", function () {
   let checkInDate = new Date(this.value);
   let checkOutInput = document.getElementById("check-out");
@@ -9,7 +28,6 @@ document.getElementById("check-in").addEventListener("change", function () {
 // Lấy các phần tử HTML
 document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".dropdown-item");
-  console.log(items);
 
   items.forEach((item) => {
     item.addEventListener("click", function (e) {
@@ -76,3 +94,29 @@ function DichVu(DvuId) {
   const LuachonDvu = document.getElementById(DvuId);
   LuachonDvu.style.display = "block";
 }
+// vị trí mặc định
+document.querySelectorAll(".li-dvu").forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định
+    const targetId = this.getAttribute("href").substring(1); // Lấy ID của phần tử đích
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      // Cuộn mượt đến phần tử đích mà không thay đổi trạng thái cuộn hiện tại
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+// doi mau
+// Lấy tất cả các liên kết
+const links = document.querySelectorAll(".li-link");
+
+// Thêm sự kiện click cho từng liên kết
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    // Xóa lớp "clicked" khỏi tất cả liên kết khác (nếu có)
+    links.forEach((l) => l.classList.remove("li-after"));
+
+    // Thêm lớp "clicked" cho liên kết đã được nhấn
+    this.classList.add("li-after");
+  });
+});

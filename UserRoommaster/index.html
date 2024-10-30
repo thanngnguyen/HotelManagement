@@ -31,10 +31,12 @@
   </head>
   <body>
     <header>
+      <!-- Liên hệ -->
       <div class="contact">
         <div class="contact-info">
           <a href="tel:+1234567890"
-            ><i class="fas fa-phone-alt"></i> +1234567890
+            ><i class="fas fa-phone-alt"></i>
+            <p class="tell">+1234567890</p>
           </a>
         </div>
         <div class="social-icons">
@@ -50,8 +52,9 @@
           ></a>
         </div>
       </div>
+      <!-- Logo Roommaster -->
       <div class="div-img-logo">
-        <a href="#Main">
+        <a href="#">
           <img
             class="img-logo"
             src="/image/logo03.png"
@@ -60,11 +63,16 @@
           />
         </a>
       </div>
+      <!-- Người dùng đăng nhập -->
       <div class="login">
-        <img src="/image/quanlybooking-icon.png" alt="login" width="20px" />
-        <a href="#">Đăng nhập</a>
+        <a href="/UserRoommaster/login.html"
+          ><div id="lgname">
+            <i class="fas fa-user-circle"></i> Đăng nhập
+          </div></a
+        >
       </div>
     </header>
+    <!-- Thanh điều hướng navbar -->
     <nav class="navbarHeader">
       <div class="navchild">
         <ul class="ulnav">
@@ -90,6 +98,7 @@
       </div>
     </nav>
     <main id="Main">
+      <!-- Bootstrap: slide ảnh khách sạn -->
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
           <button
@@ -166,135 +175,137 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="ktra-dat-phong">
-        <form action="#">
-          <div class="search">
-            <div class="input">
-              <h6>Chọn hạng phòng</h6>
-              <div class="dropdown">
-                <input
-                  type="text"
-                  class="form-control dropdown-toggle"
-                  id="roomTypeInput"
-                  placeholder="Nhập hạng phòng"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                />
-                <ul class="dropdown-menu" aria-labelledby="roomTypeInput">
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Deluxe Twin</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Deluxe King</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Deluxe Triple</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Grand Suite</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Premium Deluxe King</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#">Apartment</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Premium Deluxe Triple</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Superior Twin</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item item-dvu" href="#"
-                      >Phòng Superior Triple</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <!-- Kết hợp bootstrap và css, js -->
+      <!-- Thanh đặt phòng -->
 
-            <div class="input">
-              <h6>Ngày Nhận và Trả Phòng</h6>
-              <div class="date-input-container">
-                <!-- <label for="check-in">Ngày nhận phòng:</label> -->
-                <input
-                  type="date"
-                  id="check-in"
-                  name="checkin"
-                  class="form-control"
-                />
-
-                <!-- <label for="check-out">Ngày trả phòng:</label> -->
-                <input
-                  type="date"
-                  id="check-out"
-                  name="checkout"
-                  class="form-control"
-                />
-              </div>
-            </div>
-
-            <div class="input">
-              <h6>Số phòng</h6>
-              <div class="input-group">
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  id="decrease"
-                >
-                  -
-                </button>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="roomCount"
-                  value="1"
-                  min="1"
-                  max="80"
-                  readonly
-                />
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  id="increase"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-            <div class="input">
-              <h6>Mã khuyến mãi/Voucher</h6>
+      <form action="#">
+        <div class="search">
+          <div class="input">
+            <h6>Chọn hạng phòng</h6>
+            <div class="dropdown">
               <input
-                class="form-control"
                 type="text"
-                name="voucher"
-                id="voucher"
-                placeholder="Nhập mã khuyến mại/mã Voucher"
-                value=""
+                class="form-control dropdown-toggle"
+                id="roomTypeInput"
+                placeholder="Nhập hạng phòng"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              />
+              <ul class="dropdown-menu" aria-labelledby="roomTypeInput">
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Deluxe Twin</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Deluxe King</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Deluxe Triple</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Grand Suite</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Premium Deluxe King</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#">Apartment</a>
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Premium Deluxe Triple</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Superior Twin</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-dvu" href="#"
+                    >Phòng Superior Triple</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="input">
+            <h6>Ngày Nhận và Trả Phòng</h6>
+            <div class="date-input-container">
+              <!-- <label for="check-in">Ngày nhận phòng:</label> -->
+              <input
+                type="date"
+                id="check-in"
+                name="checkin"
+                class="form-control"
+              />
+
+              <!-- <label for="check-out">Ngày trả phòng:</label> -->
+              <input
+                type="date"
+                id="check-out"
+                name="checkout"
+                class="form-control"
               />
             </div>
-
-            <button type="submit" class="btn btn-primary h-25 mt-4">
-              Đặt Phòng
-            </button>
           </div>
-        </form>
-      </div>
+
+          <div class="input">
+            <h6>Số phòng</h6>
+            <div class="input-group">
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="decrease"
+              >
+                -
+              </button>
+              <input
+                type="text"
+                class="form-control"
+                id="roomCount"
+                value="1"
+                min="1"
+                max="80"
+                readonly
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="increase"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="input">
+            <h6>Mã khuyến mãi/Voucher</h6>
+            <input
+              class="form-control"
+              type="text"
+              name="voucher"
+              id="voucher"
+              placeholder="Nhập mã khuyến mại/mã Voucher"
+              value=""
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary h-25 mt-4">
+            Đặt Phòng
+          </button>
+        </div>
+      </form>
+      <!-- Phần tổng quan khách sạn -->
       <div class="tong-quan" id="Tong-Quan">
         <div class="gioi-thieu">
           <p>
@@ -337,6 +348,8 @@
           </ul>
         </div>
       </div>
+      <!-- Code css, js -->
+      <!-- Phần xem và đặt các hạng phòng -->
       <div class="cac-hang-phong" id="Hang-Phong">
         <h3>CÁC HẠNG PHÒNG</h3>
         <div class="gia-phong-tu-ngay">
@@ -347,7 +360,7 @@
             &#10094;
           </button>
           <div class="bang-chuyen-track">
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide01.png" alt="Card 1" />
               </div>
@@ -360,7 +373,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide02.png" alt="Card 2" />
               </div>
@@ -373,7 +386,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide03.png" alt="Card 3" />
               </div>
@@ -386,7 +399,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide04.png" alt="Card 4" />
               </div>
@@ -399,7 +412,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide05.png" alt="Card 5" />
               </div>
@@ -412,7 +425,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide01.png" alt="Card 6" />
               </div>
@@ -425,7 +438,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide02.png" alt="Card 7" />
               </div>
@@ -438,7 +451,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide03.png" alt="Card 8" />
               </div>
@@ -451,7 +464,7 @@
                 <a href="#"><button class="dat-ngay">Đặt ngay</button></a>
               </div>
             </div>
-            <div class="bang-chuyen-item item-dvu">
+            <div class="bang-chuyen-item">
               <div class="card-image">
                 <img src="/image/slide04.png" alt="Card 9" class="card-image" />
               </div>
@@ -470,6 +483,7 @@
           </button>
         </div>
       </div>
+      <!-- Phần ưu đãi của khách sạn -->
       <div class="uu-dai" id="Uu-dai">
         <h3>ƯU ĐÃI DÀNH CHO BẠN</h3>
         <div class="uu-dai-01">
@@ -481,20 +495,26 @@
           </p>
         </div>
       </div>
+      <!-- Phần dịch vụ của khách sạn -->
       <div class="dich-vu" id="Dich-vu">
         <h3>DỊCH VỤ VÀ TIỆN TÍCH</h3>
         <!-- <div class="header-dich-vu"> -->
         <ul class="ul-dvu">
           <li class="li-dvu">
-            <a href="#Nha-hang" onclick="DichVu('Nha-hang')">Nhà hàng & Bar</a>
+            <a href="#Nha-hang" class="li-link" onclick="DichVu('Nha-hang')"
+              >Nhà hàng & Bar</a
+            >
           </li>
           <li class="li-dvu">
-            <a href="#Phong-hop" onclick="DichVu('Phong-hop')"
+            <a href="#Phong-hop" class="li-link" onclick="DichVu('Phong-hop')"
               >Phòng họp & Hội nghị</a
             >
           </li>
           <li class="li-dvu">
-            <a href="#Dich-vu-khach-san" onclick="DichVu('Dich-vu-khach-san')"
+            <a
+              href="#Dich-vu-khach-san"
+              class="li-link"
+              onclick="DichVu('Dich-vu-khach-san')"
               >Dịch vụ khách sạn</a
             >
           </li>
@@ -646,8 +666,8 @@
         </div>
         <br />
         <h5>CÁC DỊCH VỤ & TIỆN ÍCH KHÁC</h5>
-        <div class="row">
-          <div class="col-4">
+        <div class="row dvu-khac">
+          <div class="col-12 col-lg-4">
             <h6>Dịch vụ lễ tân</h6>
             <ul>
               <li>Nhận/trả phòng riêng</li>
@@ -668,7 +688,7 @@
             </ul>
             <h6>Internet</h6>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <h6>Chăm sóc sức khỏe</h6>
             <ul>
               <li>Trung tâm Spa & chăm sóc sức khoẻ</li>
@@ -696,7 +716,7 @@
               <li>Giặt khô</li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <h6>Dịch vụ doanh nhân</h6>
             <h6>Dịch vụ ăn uống</h6>
             <ul>
@@ -714,6 +734,7 @@
           </div>
         </div>
       </div>
+      <!-- Phần quy định của khách sạn -->
       <div class="quy-dinh" id="Quy-dinh">
         <h3>CÁC QUY ĐỊNH CỦA KHÁCH SẠN</h3>
         <ul>
@@ -722,11 +743,12 @@
           <li>Các quy định khác</li>
         </ul>
       </div>
+      <!-- Phần đánh giá của khách hàng -->
       <div class="danh-gia" id="Danh-gia">
         <h3>ĐÁNH GIÁ CỦA KHÁCH HÀNG VỀ ROOMMASTER LUXURY</h3>
         <div class="review row">
-          <h2 class="col-2">4/5</h2>
-          <div class="star-rating col-3">
+          <h2 class="col-lg-2 col-6">4/5</h2>
+          <div class="star-rating col-lg-3 col-6">
             <h5>Rất tốt</h5>
             <span>&#9733;</span>
             <span>&#9733;</span>
@@ -736,7 +758,7 @@
             <!-- Ngôi sao trống -->
             <p>150 đánh giá</p>
           </div>
-          <div class="star-rating col-4">
+          <div class="star-rating col-lg-4 col-6">
             <b>Vị trí</b>
             <span>&#9733;</span>
             <span>&#9733;</span>
@@ -752,7 +774,7 @@
             <span>&#9733;</span>
             <span>&#9734;</span>
           </div>
-          <div class="star-rating col-3">
+          <div class="star-rating col-lg-3 col-6">
             <b>Dịch vụ</b>
             <span>&#9733;</span>
             <span>&#9733;</span>
@@ -770,29 +792,59 @@
           </div>
         </div>
       </div>
-      <div class="vi-tri"><h3>VỊ TRÍ</h3></div>
+      <!-- Phần vị trí của khách sạn -->
+      <div class="tin-tuc"><h3>TIN TỨC</h3></div>
     </main>
     <footer>
-      <div class="footer">
-        <div class="ho-tro-khach-hang col-4">
-          <h4>Hỗ trợ khách hàng</h4>
+      <div class="footer row fs-5">
+        <div class="ho-tro-khach-hang col-lg-4 col-12">
+          <h3>Hỗ trợ khách hàng</h3>
           <p>Hướng dẫn chọn phòng</p>
           <p>Hướng dẫn đặt phòng</p>
           <p>Hướng dẫn thanh toán</p>
         </div>
-        <div class="lien-he col-4">
+        <div class="lien-he col-lg-4 col-12">
           <h4>Liên hệ</h4>
           <a href="#"><p>Email liên hệ</p></a>
           <a href="#"><p>+1900-1010</p></a>
           <a href="#"><p>Liên hệ qua Fanpage</p></a>
         </div>
-        <div class="dieu-khoan-dvu col-4">
+        <div class="dieu-khoan-dvu col-lg-4 col-12">
           <h4>Điều khoản dịch vụ</h4>
           <p>Điều khoản chung</p>
           <p>Quy định chung</p>
           <p>Quy định về thanh toán</p>
           <p>Quy định về xác nhận thông tin đặt phòng</p>
           <p>Chính sách quyền riêng tư</p>
+        </div>
+      </div>
+
+      <div class="logo-footer row">
+        <div class="ct-footer col-lg-4 col-12">
+          <div class="contact-info">
+            <a href="tel:+1234567890"
+              ><i class="fas fa-phone-alt tell-footer"></i>
+              <p class="tell tell-footer">+1234567890</p>
+            </a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              title="YouTube"
+              style="color: red"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="img-logo-footer col-lg-4 col-12">
+          <img src="/image/logo03.png" alt="logo" />
+        </div>
+        <div class="gt-footer col-lg-4 col-12">
+          <p>© 2022 Roommaster Luxury. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

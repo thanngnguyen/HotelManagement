@@ -7,7 +7,7 @@ header {
   height: 32px;
   width: 100%;
   justify-content: space-between;
-  background-color: #262626;
+  background-color: #000763;
   color: #ffff;
 }
 .rmt > .nguoidung > b {
@@ -117,6 +117,12 @@ header {
 .col-12 {
   height: 500px;
   width: 97.6%;
+}
+.dat-phong {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffba22;
+  text-align: center;
 }
 .Trongtuan {
   height: 200px;
