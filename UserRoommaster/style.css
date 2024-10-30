@@ -415,16 +415,20 @@ a > .dat-ngay {
   display: flex;
   background-color: rgb(255, 255, 255);
   margin-bottom: 20px;
+  width: 100%;
+  height: 250px;
 }
 .thongtin_img{
-  margin-left: 10px;
-  width: 40%;
-  height: calc(90%);
-  align-self:center;
-  justify-self: center;
+  width: 30%;
+  height: 90%;
+  overflow: hidden;
+  margin: auto 10px;
 }
 .thongtin_img img{
-  width: 100%;
+  height: 100%;
+  width: auto;
+  object-fit:cover;
+
 }
 .input-group select{
   padding: 5px 16px;
