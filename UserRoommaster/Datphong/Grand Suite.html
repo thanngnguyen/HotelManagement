@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roommaster</title>
+    <link rel="shortcut icon" href="/image/logo03.png" type="image/x-icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../datphong.css">
+  </head>
+  <body>
+    <header>
+      <!-- Liên hệ -->
+      <div class="contact">
+        <div class="contact-info">
+          <a href="tel:+1234567890"
+            ><i class="fas fa-phone-alt"></i>
+            <p class="tell">+1234567890</p>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            title="YouTube"
+            style="color: red"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <!-- Logo Roommaster -->
+      <div class="div-img-logo">
+        <a href="#">
+          <img
+            class="img-logo"
+            src="/image/logo03.png"
+            alt="logo"
+            width="80px"
+          />
+        </a>
+      </div>
+      <!-- Người dùng đăng nhập -->
+      <div class="login">
+        <a href="/UserRoommaster/login.html"
+          ><div id="lgname">
+            <i class="fas fa-user-circle"></i> Đăng nhập
+          </div></a
+        >
+      </div>
+    </header>
+    <!-- Thanh điều hướng navbar -->
+     
+    <main class = "main_booking">
+      <a href="../index.html#Hang-Phong"
+            ><i class="fas fa-arrow-left"></i> Quay lại trang chủ</a
+          >
+      <div class="datphong_head">
+        <div class ="thongtin_img">
+          <img src="../../image/Phong.webp" alt="">
+        </div>
+        <div class="card-text name_room">
+          <h5><b>Phòng Grand Suite</b></h5>
+          <p class="fake_pre">74m<sup>2</sup>      |     1 Giường đôi</p>
+          <p>Phòng với diện tích 37m<sup>2</sup>,một giường king size,đầy đủ các thiết bị nội thất,đem lại sự thoải mái nhất cho kì nghỉ dưỡng cũng như các chuyến công tác làm việc dài hạn.</p>
+          <p>
+            Chỉ từ <strong class="gia-tien"> 1,988,000 VNĐ</strong> <span class="h5">/ đêm</span>
+          </p>
+        </div>
+      </div>
+      <div class="datphong_nav">
+        <div class ="datphong_nav_1">
+            <form action=""#> 
+              <div class="thongtin_ngaythang">
+                <div class="input">
+                 <h6>Ngày Nhận và Trả Phòng</h6>
+                 <div class="date-input-container">
+                   <!-- <label for="check-in">Ngày nhận phòng:</label> -->
+                   <input
+                     type="date"
+                     id="check-in"
+                     name="checkin"
+                     class="form-control"
+                   />
+     
+                   <!-- <label for="check-out">Ngày trả phòng:</label> -->
+                   <input
+                     type="date"
+                     id="check-out"
+                     name="checkout"
+                     class="form-control"
+                   />
+                 </div>
+               </div>
+               <div class="input">
+                 <h6>Số phòng</h6>
+                 <div class="input-group">
+                   <button
+                     class="btn btn-outline-secondary"
+                     type="button"
+                     id="decrease"
+                   >
+                     -
+                   </button>
+                   <input
+                     type="text"
+                     class="form-control"
+                     id="roomCount"
+                     value="1"
+                     min="1"
+                     max="80"
+                     readonly
+                   />
+                   <button
+                     class="btn btn-outline-secondary"
+                     type="button"
+                     id="increase"
+                   >
+                     +
+                   </button>
+                 </div>
+               </div>
+               <div class="input">
+                 <h6>Mã khuyến mãi/Voucher  <i class="fa-solid fa-ticket"></i></h6>
+                 <input
+                   class="form-control voucher"
+                   type="text"
+                   name="voucher"
+                   id="voucher"
+                   placeholder="Nhập mã khuyến mại"
+                   value=""
+                 />
+               </div>
+             </div>
+            </form> 
+          <div class="chon_nguoi">
+            <p><b>Chọn số người phòng 1</b></p>
+            <div class="input-group">
+              <form action="#">
+                <label for="nguoilon">Người lớn</label>
+                <select id="nguoilon" name="nguoilon">
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                </select>
+              </form>
+            </div>
+            <div class="input-group">
+              <form action="#">
+                <label for="treem">Trẻ em</label>
+                <select id="treem" name="treem">
+                  <option value="zero">0</option>
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                </select>
+              </form>
+            </div>
+            <div class="input-group">
+              <form action="#">
+                <label for="embe">Em bé (0-5 tuổi)</label>
+                <select id="embe" name="embe">
+                  <option value="zero">0</option>
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <br>
+          <div class="datphong_div2_1-thongtin line_text">
+            <div>
+              <p><i class="fa-solid fa-check"></i> Đã bao gồm ăn sáng</p>
+              <p><i class="fa-solid fa-check"></i> Không hoàn trả phí khi hủy phòng</p>
+            </div>
+            <div>
+              <div class="icon_plus"><i class="fa-solid fa-user-plus" ></i></div>
+              <br>
+              <p>4 nguời</p>
+            </div>
+            <div class="value_money line_text">
+              <p class="sale">3,988,000 VNĐ</p>
+              <br>
+              <p class><b class ="gia-tien">1,988,000 VNĐ</b></p>
+            </div>
+          </div>
+          <div class="tienich">
+            <p><b>Các tiện ích trong phòng</b></p>
+            <div class="tienich_row">
+              <div class="tienich_row-list" >
+                <ul>
+                  <li>Tủ quần áo</li>
+                  <li>Ga trải giường,gối</li>
+                  <li>Phòng hút thuốc</li>
+                  <li>Vòi sen</li>
+                  <li>Điều hòa</li>
+                  <li>Phòng tắm - vòi sen</li>
+                  <li>Máy sấy tóc</li>
+                </ul>
+              </div>
+              <div class="tienich_row-list">
+                <li>Phòng có bồn tắm </li>
+                <li>Két sắt an toàn</li>
+                <li>Wifi</li>
+                <li>Đồ phòng tắm</li>
+                <li>Khăn tắm</li>
+                <li>Điện thoại</li>
+                <li>Đèn bàn</li>
+                <li>Bàn làm việc</li>
+              </div>
+            </div>
+          </div>
+          <div class="chinhsac">
+            <p><b>Chính sách hoàn hủy</b></p>
+            <p>Nếu hủy, thay đổi hoặc không đến, khách sẽ trả toàn bộ giá trị tiền đặt phòng</p>
+          </div>
+          <div class="Thanhtoan ">
+            <p><b>Thanh toán</b></p>
+            <p>Thanh toán toàn bộ tiền đặt phòng</p>
+          </div>
+          <div class="">
+            <p><b>Nhận phòng: </b>14:00</p>
+            <p><b>Trả phòng: </b>12:00</p>
+            <p><b>Phụ thu người lớn: </b>270,000 VNĐ/đêm</p>
+            <p><b>Phụ thu trẻ em: </b>160,000 VNĐ/đêm</p>
+          </div>
+        </div>
+        <div class ="datphong_nav_1" >
+          <div class="background_nav_2"> 
+            <h5><b>Thông tin đặt phòng</b></h5>
+            <hr>
+            <p class="h5_5"><b>Phòng Deluxe Twin</b></p>
+            <p class="text_min"><b>16/10/2024-18/10/2024 </b>(3 ngày 2 đêm)</p>
+            <hr>
+            <p class="h5_5"><b>Thông tin phòng</b></p>
+            <div class ="line_text">
+              <p>Phòng: 1 phòng Deluxe Twin</p>
+              <p>1 người lớn - 0 trẻ em - 0 em bé</p>
+              <p>Phụ thu người lớn : 270.000 VNĐ/ đêm</p>
+            </div>
+            <div class="money_cancel">
+              <p><b>1.288.000VNĐ/ đêm</b></p>
+              <button class="cancel-button">
+                <span class="icon">×</span> Hủy
+              </button>
+            </div>
+            <br>
+            <hr>
+            <div class="total">
+              <b>Tổng cộng</b> 
+              <span class="gia-tien">2,037,000 VNĐ</span>
+            </div>
+            <br>
+            <div>
+              <button class="dat-ngay-datphong">ĐẶT NGAY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer row fs-5">
+        <div class="ho-tro-khach-hang col-lg-4 col-12">
+          <h3>Hỗ trợ khách hàng</h3>
+          <p>Hướng dẫn chọn phòng</p>
+          <p>Hướng dẫn đặt phòng</p>
+          <p>Hướng dẫn thanh toán</p>
+        </div>
+        <div class="lien-he col-lg-4 col-12">
+          <h4>Liên hệ</h4>
+          <a href="#"><p>Email liên hệ</p></a>
+          <a href="#"><p>+1900-1010</p></a>
+          <a href="#"><p>Liên hệ qua Fanpage</p></a>
+        </div>
+        <div class="dieu-khoan-dvu col-lg-4 col-12">
+          <h4>Điều khoản dịch vụ</h4>
+          <p>Điều khoản chung</p>
+          <p>Quy định chung</p>
+          <p>Quy định về thanh toán</p>
+          <p>Quy định về xác nhận thông tin đặt phòng</p>
+          <p>Chính sách quyền riêng tư</p>
+        </div>
+      </div>
+
+      <div class="logo-footer row">
+        <div class="ct-footer col-lg-4 col-12">
+          <div class="contact-info">
+            <a href="tel:+1234567890"
+              ><i class="fas fa-phone-alt tell-footer"></i>
+              <p class="tell tell-footer">+1234567890</p>
+            </a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              title="YouTube"
+              style="color: red"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="img-logo-footer col-lg-4 col-12">
+          <img src="/image/logo03.png" alt="logo" />
+        </div>
+        <div class="gt-footer col-lg-4 col-12">
+          <p>© 2022 Roommaster Luxury. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
