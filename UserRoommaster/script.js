@@ -3,7 +3,6 @@ const storedUsername = localStorage.getItem("username");
 if (storedUsername) {
   lgname.innerHTML = `<i class="fas fa-user-circle"></i> ${storedUsername}`;
 }
-
 const linknav = document.querySelectorAll(".linav");
 
 // Thêm sự kiện click cho từng liên kết
