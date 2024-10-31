@@ -37,6 +37,7 @@ footer {
   width: 100%;
   background-color: #000763;
   color: #ffffff;
+  overflow: hidden;
 }
 /* Phần liên hệ */
 .contact {
@@ -103,7 +104,21 @@ footer {
 .a-nav {
   text-decoration: none;
   font-weight: bold;
-  color: rgb(61, 61, 61);
+  color: #3d3d3d;
+}
+.a-nav:hover {
+  color: #008f9d;
+}
+.linav a.active {
+  color: #008f9d;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #008f9d;
+  transition: ease-in-out 0.5s;
+}
+.li-after {
+  color: #ffba22;
+  padding-bottom: 5px;
+  transition: ease-in-out 0.5s;
 }
 /* Slide khách sạn */
 .slide {
@@ -318,12 +333,6 @@ a > .dat-ngay {
 .li-dvu > a {
   text-decoration: none;
 }
-.li-after {
-  color: #008f9d;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #008f9d;
-  transition: ease-in-out 0.5s;
-}
 .xem-chi-tiet {
   width: 93.6%;
   height: 35px;
@@ -369,10 +378,20 @@ a > .dat-ngay {
 }
 .col-lg-2 {
   font-size: 70px;
-  color: green;
+  color: #008f9d;
 }
 .tin-tuc {
   padding: 40px;
+}
+.tin-tuc-item > .bang-chuyen-track {
+  overflow-x: auto;
+  white-space: inherit;
+}
+.tin-item {
+  min-width: 23.3%;
+}
+.tin-item a h5 {
+  color: #008f9d;
 }
 .footer {
   margin: 0 auto;
@@ -382,7 +401,15 @@ a > .dat-ngay {
   padding: 40px;
   box-sizing: border-box;
 }
+.ho-tro-khach-hang > a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .lien-he > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.dieu-khoan-dvu > a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -444,6 +471,25 @@ a > .dat-ngay {
     overflow-x: auto;
     white-space: nowrap;
   }
+  .tin-tuc-item > .bang-chuyen-track {
+    overflow-x: auto;
+    /* white-space: nowrap; */
+  }
+  .tin-item {
+    min-width: 33.3%;
+  }
+  .card-text > a > h5 {
+    font-size: 12px;
+  }
+  .tt-time {
+    font-size: 8px;
+  }
+  .contact {
+    width: 35%;
+  }
+  .login {
+    font-size: small;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -465,9 +511,6 @@ a > .dat-ngay {
   }
   .d-block {
     height: 50% !important;
-  }
-  .search {
-    display: none;
   }
   .gioi-thieu {
     width: 100%;
@@ -497,6 +540,15 @@ a > .dat-ngay {
   }
   .quy-dinh {
     font-size: 20px;
+  }
+  .tin-item {
+    min-width: 33.3%;
+  }
+  .card-text > a > h5 {
+    font-size: 12px;
+  }
+  .tt-time {
+    font-size: 8px;
   }
   .review {
     padding: 0;

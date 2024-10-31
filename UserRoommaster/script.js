@@ -3,6 +3,29 @@ const storedUsername = localStorage.getItem("username");
 if (storedUsername) {
   lgname.innerHTML = `<i class="fas fa-user-circle"></i> ${storedUsername}`;
 }
+
+const navLinks = document.querySelectorAll(".a-nav");
+
+// dat lien ket hoat dong diak theo vi tri
+window.addEventListener("scroll", () => {
+  let currentSection = "";
+
+  document.querySelectorAll(".sections").forEach((sections) => {
+    const sectionTop = sections.offsetTop;
+    if (pageYOffset >= sectionTop - 250) {
+      currentSection = sections.getAttribute("id");
+    }
+  });
+
+  // cap nhat lien ket hoa dong
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
 const linknav = document.querySelectorAll(".linav");
 
 // Thêm sự kiện click cho từng liên kết
