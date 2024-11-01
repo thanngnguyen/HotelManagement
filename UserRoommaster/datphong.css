@@ -142,16 +142,20 @@
     }
     .thongtin_ngaythang{
       display: flex;
-      flex-direction: column;
       flex-wrap: wrap;
     }
     .chon_nguoi{
-      flex-direction:column;
       flex-wrap: wrap;
       gap :5px;
     }
     .thongtin_img{
       width :100%;
     }
+    .thongtin_ngaythang > :nth-child(2){
+       flex: 5;
+    }
+    .thongtin_ngaythang > :nth-child(3){
+      width: 5;
+   }
   } 
   
