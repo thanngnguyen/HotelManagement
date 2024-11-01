@@ -65,7 +65,7 @@
       </div>
       <!-- Người dùng đăng nhập -->
       <div class="login">
-        <a href="/UserRoommaster/login.html"
+        <a href="/UserRoommaster/signup.html"
           ><div id="lgname">
             <i class="fas fa-user-circle"></i> Đăng nhập
           </div></a
@@ -260,53 +260,55 @@
             </div>
           </div>
 
-          <div class="input">
-            <h6>Số phòng</h6>
-            <div class="input-group">
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="decrease"
-              >
-                -
-              </button>
+          <div class="d-flex justify-content-sm-around">
+            <div class="input">
+              <h6>Số phòng</h6>
+              <div class="input-group">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="decrease"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="roomCount"
+                  value="1"
+                  min="1"
+                  max="80"
+                  readonly
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="increase"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="input">
+              <h6>Mã khuyến mãi/Voucher</h6>
               <input
-                type="text"
                 class="form-control"
-                id="roomCount"
-                value="1"
-                min="1"
-                max="80"
-                readonly
+                type="text"
+                name="voucher"
+                id="voucher"
+                placeholder="Nhập mã khuyến mại/mã Voucher"
+                value=""
               />
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="increase"
-              >
-                +
-              </button>
             </div>
           </div>
-          <div class="input">
-            <h6>Mã khuyến mãi/Voucher</h6>
-            <input
-              class="form-control"
-              type="text"
-              name="voucher"
-              id="voucher"
-              placeholder="Nhập mã khuyến mại/mã Voucher"
-              value=""
-            />
-          </div>
 
-          <button type="submit" class="btn btn-primary h-25 mt-4">
-            Đặt Phòng
+          <button type="submit" class="btn h-25 mt-4 submit">
+            <a href="#Hang-Phong" class="dat-phong">Đặt Phòng</a>
           </button>
         </div>
       </form>
       <!-- Phần tổng quan khách sạn -->
-      <div class="tong-quan" id="Tong-Quan">
+      <div class="tong-quan sections" id="Tong-Quan">
         <div class="gioi-thieu">
           <p>
             Tọa lạc ngay trung tâm khu du lịch Bãi Cháy - Hạ Long, từ đây du
@@ -350,7 +352,7 @@
       </div>
       <!-- Code css, js -->
       <!-- Phần xem và đặt các hạng phòng -->
-      <div class="cac-hang-phong" id="Hang-Phong">
+      <div class="cac-hang-phong sections" id="Hang-Phong">
         <h3>CÁC HẠNG PHÒNG</h3>
         <div class="gia-phong-tu-ngay">
           <span>Giá phòng từ ngày: 17/10/2024 ~ 25/10/2024</span>
@@ -362,7 +364,7 @@
           <div class="bang-chuyen-track">
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide01.png" alt="Card 1" />
+                <img src="/image/deluxe-twin.jpg" alt="Card 1" />
               </div>
               <div class="card-text">
                 <h5>Phòng Deluxe Twin</h5>
@@ -375,7 +377,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide02.png" alt="Card 2" />
+                <img src="/image/deluxe-king.jpg" alt="Card 2" />
               </div>
               <div class="card-text">
                 <h5>Phòng Deluxe King</h5>
@@ -388,7 +390,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide03.png" alt="Card 3" />
+                <img src="/image/deluxe-triple.jpg" alt="Card 3" />
               </div>
               <div class="card-text">
                 <h5>Phòng Deluxe Triple</h5>
@@ -401,7 +403,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide04.png" alt="Card 4" />
+                <img src="/image/grand-suite.jpg" alt="Card 4" />
               </div>
               <div class="card-text">
                 <h5>Phòng Grand Suite</h5>
@@ -414,11 +416,11 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide05.png" alt="Card 5" />
+                <img src="/image/premium-deluxe-king.jpg" alt="Card 5" />
               </div>
               <div class="card-text">
                 <h5>Phòng Premium Deluxe King</h5>
-                <pre>37m<sup>2</sup>      |     2 Giường King size</pre>
+                <pre>37m<sup>2</sup>      |     1 Giường King size</pre>
                 <p>
                   Chỉ từ <strong class="gia-tien">1,588,000 VNĐ</strong> / đêm
                 </p>
@@ -427,7 +429,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide01.png" alt="Card 6" />
+                <img src="/image/apartment.jpg" alt="Card 6" />
               </div>
               <div class="card-text">
                 <h5>Apartment</h5>
@@ -440,7 +442,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide02.png" alt="Card 7" />
+                <img src="/image/premium-deluxe-triple.jpg" alt="Card 7" />
               </div>
               <div class="card-text">
                 <h5>Phòng Premium Deluxe Triple</h5>
@@ -453,7 +455,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide03.png" alt="Card 8" />
+                <img src="/image/superior-twin.jpg" alt="Card 8" />
               </div>
               <div class="card-text">
                 <h5>Phòng Superior Twin</h5>
@@ -466,7 +468,11 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/slide04.png" alt="Card 9" class="card-image" />
+                <img
+                  src="/image/superior-triple.jpg"
+                  alt="Card 9"
+                  class="card-image"
+                />
               </div>
               <div class="card-text">
                 <h5>Phòng Superior Triple</h5>
@@ -484,19 +490,19 @@
         </div>
       </div>
       <!-- Phần ưu đãi của khách sạn -->
-      <div class="uu-dai" id="Uu-dai">
+      <div class="uu-dai sections" id="Uu-dai">
         <h3>ƯU ĐÃI DÀNH CHO BẠN</h3>
         <div class="uu-dai-01">
           <img class="img-uu-dai" src="/image/uu-dai-01.png" alt="uu dai" />
           <p class="text-uu-dai">
-            [NIGHT DEAL| KHU VỰC HÀ NỘI - HẠ LONG] - Ưu đãi lên đến 75% giá
+            [NIGHT DEAL| KHU VỰC HÀ NỘI - HẠ LONG] - Ưu đãi lên đến 45% giá
             phòng, khung giờ 18h00 - 06h00 Chỉ từ 1,026,000 VNĐ /phòng/đêm - 2
             Người lớn - 0 Trẻ em - 2 Em bé
           </p>
         </div>
       </div>
       <!-- Phần dịch vụ của khách sạn -->
-      <div class="dich-vu" id="Dich-vu">
+      <div class="dich-vu sections" id="Dich-vu">
         <h3>DỊCH VỤ VÀ TIỆN TÍCH</h3>
         <!-- <div class="header-dich-vu"> -->
         <ul class="ul-dvu">
@@ -570,7 +576,7 @@
           <div class="bang-chuyen-track">
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/nha-hang-01.png" alt="Card 01" />
+                <img src="/image/the-planer.jpg" alt="Card 01" />
               </div>
               <div class="card-text">
                 <h3>The Planer</h3>
@@ -586,7 +592,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/nha-hang-02.png" alt="Card 02" />
+                <img src="/image/the-bliss.jpg" alt="Card 02" />
               </div>
               <div class="card-text">
                 <h3>The Bliss</h3>
@@ -602,7 +608,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/quay-bar.png" alt="Card 03" />
+                <img src="/image/riverside-palace.jpg" alt="Card 03" />
               </div>
               <div class="card-text">
                 <h3>Riverside Palace</h3>
@@ -622,7 +628,7 @@
           <div class="bang-chuyen-track">
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/nha-hang-01.png" alt="Card 01" />
+                <img src="/image/spa.jpg" alt="Card 01" />
               </div>
               <div class="card-text">
                 <h3>Spa & Massage</h3>
@@ -636,7 +642,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/nha-hang-02.png" alt="Card 02" />
+                <img src="/image/gym.jpg" alt="Card 02" />
               </div>
               <div class="card-text">
                 <h3>Fitness Center</h3>
@@ -650,7 +656,7 @@
             </div>
             <div class="bang-chuyen-item">
               <div class="card-image">
-                <img src="/image/quay-bar.png" alt="Card 03" />
+                <img src="/image/dvu-khac.jpg" alt="Card 03" />
               </div>
               <div class="card-text">
                 <h3>Dịch vụ khác</h3>
@@ -735,7 +741,7 @@
         </div>
       </div>
       <!-- Phần quy định của khách sạn -->
-      <div class="quy-dinh" id="Quy-dinh">
+      <div class="quy-dinh sections" id="Quy-dinh">
         <h3>CÁC QUY ĐỊNH CỦA KHÁCH SẠN</h3>
         <ul>
           <li>Trẻ em và giường phụ +</li>
@@ -744,7 +750,7 @@
         </ul>
       </div>
       <!-- Phần đánh giá của khách hàng -->
-      <div class="danh-gia" id="Danh-gia">
+      <div class="danh-gia sections" id="Danh-gia">
         <h3>ĐÁNH GIÁ CỦA KHÁCH HÀNG VỀ ROOMMASTER LUXURY</h3>
         <div class="review row">
           <h2 class="col-lg-2 col-6">4/5</h2>
@@ -792,30 +798,115 @@
           </div>
         </div>
       </div>
-      <!-- Phần vị trí của khách sạn -->
-      <div class="tin-tuc"><h3>TIN TỨC</h3></div>
+      <div class="tin-tuc">
+        <a href="#" class="text-decoration-none text-black"><h3>TIN TỨC</h3></a>
+        <div class="bang-chuyen tin-tuc-item">
+          <div class="bang-chuyen-track">
+            <div class="bang-chuyen-item tin-item">
+              <div class="card-image">
+                <img
+                  src="/image/cam-nang-du-lich-quang-ninh.jpg"
+                  alt="Card 1"
+                />
+              </div>
+              <div class="card-text tt-time">
+                <a href="#" class="text-decoration-none">
+                  <h5>Cẩm nang du lịch Quảng Ninh HOT nhất 2024</h5>
+                </a>
+                <i class="fas fa-calendar"></i> 05/09/2024
+              </div>
+            </div>
+            <div class="bang-chuyen-item tin-item">
+              <div class="card-image">
+                <img src="/image/kinh-nghiem-dat-phong.jpg" alt="Card 2" />
+              </div>
+              <div class="card-text tt-time">
+                <a href="#" class="text-decoration-none">
+                  <h5>
+                    Kinh nghiệm đặt phòng khách sạn tối ưu và chi tiết nhất
+                  </h5>
+                </a>
+                <i class="fas fa-calendar"></i> 26/08/2024
+              </div>
+            </div>
+            <div class="bang-chuyen-item tin-item">
+              <div class="card-image">
+                <img src="/image/tuan-van-hoa-du-lich.jpg" alt="Card 3" />
+              </div>
+              <div class="card-text tt-time">
+                <a href="#" class="text-decoration-none">
+                  <h5>
+                    Tuần Văn hóa - Du lịch, Hội Mùa Vàng Bình Liêu 2023: Thiên
+                    đường mùa thu miền biên viễn
+                  </h5>
+                </a>
+                <i class="fas fa-calendar"></i> 28/05/2024
+              </div>
+            </div>
+            <div class="bang-chuyen-item tin-item">
+              <div class="card-image">
+                <img
+                  src="/image/kham-pha-he-thong-khach-san.jpg"
+                  alt="Card 3"
+                />
+              </div>
+              <div class="card-text tt-time">
+                <a href="#" class="text-decoration-none">
+                  <h5>Khám phá hệ thống khách sạn Roommaster tại Hà Nội</h5>
+                </a>
+                <i class="fas fa-calendar"></i> 22/05/2024
+              </div>
+            </div>
+            <div class="bang-chuyen-item tin-item">
+              <div class="card-image">
+                <img src="/image/binh-lieu-vien-ngoc-xanh.jpg" alt="Card 3" />
+              </div>
+              <div class="card-text tt-time">
+                <a href="#" class="text-decoration-none">
+                  <h5>Bình Liêu: Viên ngọc xanh "ẩn mình" vùng biên cương</h5>
+                </a>
+                <i class="fas fa-calendar"></i>15/05/2024
+              </div>
+            </div>
+            <div class="bang-chuyen-item tin-item">
+              <div class="card-image">
+                <img src="/image/kham-pha-la-pan-tan.jpg" alt="Card 3" />
+              </div>
+              <div class="card-text tt-time">
+                <a href="#" class="text-decoration-none">
+                  <h5>
+                    Khám phá La Pán Tẩn: Thiên đường ruộng bậc thang đẹp nhất
+                    Tây Bắc
+                  </h5>
+                </a>
+                <i class="fas fa-calendar"></i> 08/04/2024
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer row fs-5">
-        <div class="ho-tro-khach-hang col-lg-4 col-12">
+        <div class="ho-tro-khach-hang col-lg-4 col-sm-4">
           <h3>Hỗ trợ khách hàng</h3>
-          <p>Hướng dẫn chọn phòng</p>
-          <p>Hướng dẫn đặt phòng</p>
-          <p>Hướng dẫn thanh toán</p>
+          <a href="#"><p>Hướng dẫn chọn phòng</p></a>
+          <a href="#"><p>Hướng dẫn đặt phòng</p></a>
+          <a href="#"><p>Hướng dẫn thanh toán</p></a>
         </div>
-        <div class="lien-he col-lg-4 col-12">
+        <div class="lien-he col-lg-4 col-sm-4">
           <h4>Liên hệ</h4>
           <a href="#"><p>Email liên hệ</p></a>
           <a href="#"><p>+1900-1010</p></a>
           <a href="#"><p>Liên hệ qua Fanpage</p></a>
         </div>
-        <div class="dieu-khoan-dvu col-lg-4 col-12">
+        <div class="dieu-khoan-dvu col-lg-4 col-sm-4">
           <h4>Điều khoản dịch vụ</h4>
-          <p>Điều khoản chung</p>
-          <p>Quy định chung</p>
-          <p>Quy định về thanh toán</p>
-          <p>Quy định về xác nhận thông tin đặt phòng</p>
-          <p>Chính sách quyền riêng tư</p>
+          <a href="#"><p>Điều khoản chung</p></a>
+          <a href="#"><p>Quy định chung</p></a>
+          <a href="#"><p>Quy định về thanh toán</p></a>
+          <a href="#"><p>Quy định về xác nhận thông tin đặt phòng</p></a>
+          <a href="#"><p>Chính sách quyền riêng tư</p></a>
         </div>
       </div>
 
