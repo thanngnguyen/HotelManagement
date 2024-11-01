@@ -148,6 +148,8 @@
     .chon_nguoi{
       flex-wrap: wrap;
       gap :5px;
+      justify-content: flex-start;
+      width: 100%;
     }
     .thongtin_img{
       width :100%;
