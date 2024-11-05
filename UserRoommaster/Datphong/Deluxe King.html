@@ -27,9 +27,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../fontawesome-free-6.6.0-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="../../fontawesome-free-6.6.0-web/css/all.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../datphong.css">
+    <link rel="stylesheet" href="../datphong.css" />
   </head>
   <body>
     <header>
@@ -75,89 +78,96 @@
       </div>
     </header>
     <!-- Thanh điều hướng navbar -->
-     
-    <main class = "main_booking">
+
+    <main class="main_booking">
       <a href="../index.html#Hang-Phong"
-            ><i class="fas fa-arrow-left"></i> Quay lại trang chủ</a
-          >
+        ><i class="fas fa-arrow-left"></i> Quay lại trang chủ</a
+      >
       <div class="datphong_head">
-        <div class ="thongtin_img">
-          <img src="../../image/Phong.webp" alt="">
+        <div class="thongtin_img">
+          <img src="/image/deluxe-king.jpg" alt="deluxe-king" />
         </div>
         <div class="card-text name_room">
           <h5><b>Phòng Deluxe King</b></h5>
-          <p class="fake_pre">37m<sup>2</sup>      |     1 Giường</p>
-          <p>Phòng với diện tích 37m<sup>2</sup>,một giường king size,đầy đủ các thiết bị nội thất,đem lại sự thoải mái nhất cho kì nghỉ dưỡng cũng như các chuyến công tác làm việc dài hạn.</p>
+          <p class="fake_pre">37m<sup>2</sup> | 1 Giường</p>
           <p>
-            Chỉ từ <strong class="gia-tien"> 1,588,000 VNĐ</strong> <span class="h5">/ đêm</span>
+            Phòng với diện tích 37m<sup>2</sup>,một giường king size,đầy đủ các
+            thiết bị nội thất,đem lại sự thoải mái nhất cho kì nghỉ dưỡng cũng
+            như các chuyến công tác làm việc dài hạn.
+          </p>
+          <p>
+            Chỉ từ <strong class="gia-tien"> 1,588,000 VNĐ</strong>
+            <span class="h5">/ đêm</span>
           </p>
         </div>
       </div>
       <div class="datphong_nav">
-        <div class ="datphong_nav_1">
-            <form action=""#> 
-              <div class="thongtin_ngaythang">
-                <div class="input">
-                 <h6>Ngày Nhận và Trả Phòng</h6>
-                 <div class="date-input-container">
-                   <!-- <label for="check-in">Ngày nhận phòng:</label> -->
-                   <input
-                     type="date"
-                     id="check-in"
-                     name="checkin"
-                     class="form-control"
-                   />
-     
-                   <!-- <label for="check-out">Ngày trả phòng:</label> -->
-                   <input
-                     type="date"
-                     id="check-out"
-                     name="checkout"
-                     class="form-control"
-                   />
-                 </div>
-               </div>
-               <div class="input">
-                 <h6>Số phòng</h6>
-                 <div class="input-group">
-                   <button
-                     class="btn btn-outline-secondary"
-                     type="button"
-                     id="decrease"
-                   >
-                     -
-                   </button>
-                   <input
-                     type="text"
-                     class="form-control"
-                     id="roomCount"
-                     value="1"
-                     min="1"
-                     max="80"
-                     readonly
-                   />
-                   <button
-                     class="btn btn-outline-secondary"
-                     type="button"
-                     id="increase"
-                   >
-                     +
-                   </button>
-                 </div>
-               </div>
-               <div class="input">
-                 <h6>Mã khuyến mãi/Voucher  <i class="fa-solid fa-ticket"></i></h6>
-                 <input
-                   class="form-control voucher"
-                   type="text"
-                   name="voucher"
-                   id="voucher"
-                   placeholder="Nhập mã khuyến mại"
-                   value=""
-                 />
-               </div>
-             </div>
-            </form> 
+        <div class="datphong_nav_1">
+          <form action="" #>
+            <div class="thongtin_ngaythang">
+              <div class="input">
+                <h6>Ngày Nhận và Trả Phòng</h6>
+                <div class="date-input-container">
+                  <!-- <label for="check-in">Ngày nhận phòng:</label> -->
+                  <input
+                    type="date"
+                    id="check-in"
+                    name="checkin"
+                    class="form-control"
+                  />
+
+                  <!-- <label for="check-out">Ngày trả phòng:</label> -->
+                  <input
+                    type="date"
+                    id="check-out"
+                    name="checkout"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="input">
+                <h6>Số phòng</h6>
+                <div class="input-group">
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="decrease"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="roomCount"
+                    value="1"
+                    min="1"
+                    max="80"
+                    readonly
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="increase"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="input">
+                <h6>
+                  Mã khuyến mãi/Voucher <i class="fa-solid fa-ticket"></i>
+                </h6>
+                <input
+                  class="form-control voucher"
+                  type="text"
+                  name="voucher"
+                  id="voucher"
+                  placeholder="Nhập mã khuyến mại"
+                  value=""
+                />
+              </div>
+            </div>
+          </form>
           <div class="chon_nguoi">
             <p><b>Chọn số người phòng 1</b></p>
             <div class="input-group">
@@ -172,7 +182,7 @@
             </div>
             <div class="input-group">
               <form action="#">
-                <label for="treem">Trẻ em</label><br>
+                <label for="treem">Trẻ em</label><br />
                 <select id="treem" name="treem">
                   <option value="zero">0</option>
                   <option value="one">1</option>
@@ -193,27 +203,30 @@
               </form>
             </div>
           </div>
-          <br>
+          <br />
           <div class="datphong_div2_1-thongtin line_text">
             <div>
               <p><i class="fa-solid fa-check"></i> Đã bao gồm ăn sáng</p>
-              <p><i class="fa-solid fa-check"></i> Không hoàn trả phí khi hủy phòng</p>
+              <p>
+                <i class="fa-solid fa-check"></i> Không hoàn trả phí khi hủy
+                phòng
+              </p>
             </div>
             <div>
-              <div class="icon_plus"><i class="fa-solid fa-user-plus" ></i></div>
-              <br>
+              <div class="icon_plus"><i class="fa-solid fa-user-plus"></i></div>
+              <br />
               <p>4 nguời</p>
             </div>
             <div class="value_money line_text">
               <p class="sale">2,588,000 VNĐ</p>
-              <br>
-              <p class><b class ="gia-tien">1,588,000 VNĐ</b></p>
+              <br />
+              <p class><b class="gia-tien">1,588,000 VNĐ</b></p>
             </div>
           </div>
           <div class="tienich">
             <p><b>Các tiện ích trong phòng</b></p>
             <div class="tienich_row">
-              <div class="tienich_row-list" >
+              <div class="tienich_row-list">
                 <ul>
                   <li>Tủ quần áo</li>
                   <li>Ga trải giường,gối</li>
@@ -225,7 +238,7 @@
                 </ul>
               </div>
               <div class="tienich_row-list">
-                <li>Phòng có bồn tắm </li>
+                <li>Phòng có bồn tắm</li>
                 <li>Két sắt an toàn</li>
                 <li>Wifi</li>
                 <li>Đồ phòng tắm</li>
@@ -238,9 +251,12 @@
           </div>
           <div class="chinhsac">
             <p><b>Chính sách hoàn hủy</b></p>
-            <p>Nếu hủy, thay đổi hoặc không đến, khách sẽ trả toàn bộ giá trị tiền đặt phòng</p>
+            <p>
+              Nếu hủy, thay đổi hoặc không đến, khách sẽ trả toàn bộ giá trị
+              tiền đặt phòng
+            </p>
           </div>
-          <div class="Thanhtoan ">
+          <div class="Thanhtoan">
             <p><b>Thanh toán</b></p>
             <p>Thanh toán toàn bộ tiền đặt phòng</p>
           </div>
@@ -251,15 +267,15 @@
             <p><b>Phụ thu trẻ em: </b>160,000 VNĐ/đêm</p>
           </div>
         </div>
-        <div class ="datphong_nav_1" >
-          <div class="background_nav_2"> 
+        <div class="datphong_nav_1">
+          <div class="background_nav_2">
             <h5><b>Thông tin đặt phòng</b></h5>
-            <hr>
+            <hr />
             <p class="h5_5"><b>Phòng Deluxe King</b></p>
             <p class="text_min"><b>16/10/2024-18/10/2024 </b>(3 ngày 2 đêm)</p>
-            <hr>
+            <hr />
             <p class="h5_5"><b>Thông tin phòng</b></p>
-            <div class ="line_text">
+            <div class="line_text">
               <p>Phòng: 1 phòng Deluxe King</p>
               <p>1 người lớn - 0 trẻ em - 0 em bé</p>
               <p>Phụ thu người lớn : 270.000 VNĐ/ đêm</p>
@@ -270,13 +286,13 @@
                 <span class="icon">×</span> Hủy
               </button>
             </div>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <div class="total">
-              <b>Tổng cộng</b> 
+              <b>Tổng cộng</b>
               <span class="gia-tien">2,037,000 VNĐ</span>
             </div>
-            <br>
+            <br />
             <div>
               <button class="dat-ngay-datphong">ĐẶT NGAY</button>
             </div>
@@ -337,6 +353,6 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
