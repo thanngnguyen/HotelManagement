@@ -55,9 +55,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./trangchu.css">
   </head>
   <body>
-    <header>
+    <header id="main-header">
       <!-- Liên hệ -->
       <div class="contact">
         <div class="contact-info">
@@ -531,6 +532,21 @@
           </button>
         </div>
       </div>
+      <!-- Thanh điều hướng -->
+      <<div class="nav-tabs">
+        <button class="toggle-tabs" onclick="toggleTabsMenu('left')">⟵</button>
+        <div class="tabs-menu">
+          <div class="tab active" data-type="brands" onclick="showGallery('brands')">Các Thương Hiệu</div>
+          <div class="tab" data-type="destinations" onclick="showGallery('destinations')">Điểm Đến</div>
+          <div class="tab" data-type="offers" onclick="showGallery('offers')">Lễ hội</div>
+          <div class="tab" data-type="services" onclick="showGallery('services')">Nghỉ dưỡng</div>
+        </div>
+        <button class="toggle-tabs" onclick="toggleTabsMenu('right')">⟶</button>
+      </div>
+      <!-- Container chứa hình ảnh -->
+      <div id="gallery-container" class="gallery">
+        <!-- Nội dung sẽ được thay đổi bởi JavaScript -->
+      </div>
       <!-- Phần ưu đãi của khách sạn -->
       <div class="uu-dai sections" id="Uu-dai">
         <h3>ƯU ĐÃI DÀNH CHO BẠN</h3>
@@ -544,6 +560,40 @@
         </div>
       </div>
       <!-- Phần dịch vụ của khách sạn -->
+      <div class="main-container">
+        <div class="item_img">
+          <img src="https://muongthanh.com/images/config/icon3_1694420722.jpg" alt="">
+          <div class="text_content_img">
+            <div class="background-overlay"></div>
+            <div class="text_title">
+              Đậm đà <br>
+              Bản sắc Việt
+            </div>
+            <div class="text_description">
+              Khởi nguồn từ vùng đất Điện Biên lịch sử, nơi mang đậm phong cách của dân tộc Thái vùng Tây Bắc, mỗi khách sạn Roommaster đều thừa hưởng nét tinh tế trong cái nôi văn hóa ấy, từ hoa ban, váy thái, đến rượu táo mèo, xôi nếp nương. Khi nhớ đến Roommaster, du khách sẽ nhớ đến màu sắc thuần Việt, tạo nên bởi sự giao thoa giữa văn hóa đặc trưng của vùng núi Tây Bắc và điều chân thành trong nụ cười hồn hậu của con người Việt Nam.
+            </div>
+           <div class="text_subtitle">
+              Relaxing moments
+          </div>
+          </div>
+        </div>
+        <div class="item_img">
+          <img src="https://muongthanh.com/images/config/icon3a_1558585109_1688036885.jpg" alt="">
+          <div class="text_content_img">
+            <div class="background-overlay"></div>
+            <div class="text_title">
+              Hệ thống khách sạn tư nhân  <br>
+              LỚN NHẤT ĐÔNG DƯƠNG
+            </div>
+            <div class="text_description">
+              Roommaster được chứng nhận là “Chuỗi khách sạn tư nhân lớn nhất Đông Dương” với hệ thống trên 60 khách sạn phủ hơn 40 tỉnh thành từ Bắc vào Nam và nước bạn Lào. Trên muôn nẻo hành trình khám phá Việt Nam, du khách có thể lựa chọn Roommaster là điểm dừng chân lý tưởng, hoàn toàn yên tâm về sản phẩm đồng nhất và các dịch vụ đa dạng theo nhu cầu.
+            </div>
+           <div class="text_subtitle">
+              Touching sincerity
+          </div>
+          </div>
+        </div>
+      </div>
       <div class="dich-vu sections" id="Dich-vu">
         <h3>DỊCH VỤ VÀ TIỆN TÍCH</h3>
         <!-- <div class="header-dich-vu"> -->
@@ -946,6 +996,7 @@
         </div>
       </div>
     </main>
+    
     <footer>
       <div class="footer row fs-5">
         <div class="ho-tro-khach-hang col-lg-4 col-sm-4">
@@ -999,6 +1050,8 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    
+    <script src="./trangchus.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

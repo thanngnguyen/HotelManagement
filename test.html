@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Tabs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    .nav-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .toggle-tabs {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Ẩn các nút điều hướng trên màn hình lớn */
+    .toggle-tabs {
+      display: none;
+    }
+
+    .tabs-menu {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      min-width: 80px;
+    }
+
+    .tab:hover {
+      background-color: #e2e6ea;
+    }
+
+    /* Khi màn hình nhỏ, chỉ hiển thị 1 tab, còn các tab khác ẩn đi */
+    @media (max-width: 768px) {
+      .tabs-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .tab {
+        display: none; /* Ẩn tất cả các tab trên màn hình nhỏ */
+      }
+
+      /* Chỉ hiển thị tab hiện tại */
+      .tab.active {
+        display: inline-block;
+      }
+
+      /* Hiển thị các nút điều hướng */
+      .toggle-tabs {
+        display: inline-block;
+      }
+    }
+
+    .gallery {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-tabs">
+    <button class="toggle-tabs" onclick="toggleTabsMenu('left')">⟵</button>
+    <div class="tabs-menu">
+      <button class="tab active" onclick="showGallery('brands')">Các Thương Hiệu</button>
+      <button class="tab" onclick="showGallery('destinations')">Điểm Đến</button>
+      <button class="tab" onclick="showGallery('offers')">Ưu Đãi12</button>
+      <button class="tab" onclick="showGallery('services')">Dịch Vụ</button>
+    </div>
+    <button class="toggle-tabs" onclick="toggleTabsMenu('right')">⟶</button>
+  </div>
+
+  <div id="gallery-container" class="gallery">
+    <p id="tab-info">Hãy chọn một tab để xem thông tin.</p>
+  </div>
+
+  <script>
+    let currentIndex = 0; // Chỉ số tab hiện tại
+    const tabs = document.querySelectorAll('.tab');
+    const tabInfoElement = document.getElementById('tab-info'); // Phần tử <p> hiển thị tên tab
+
+    function updateActiveTab() {
+      // Xóa lớp "active" khỏi tất cả các tab
+      tabs.forEach(tab => tab.classList.remove('active'));
+      // Đặt lớp "active" cho tab hiện tại
+      tabs[currentIndex].classList.add('active');
+    }
+
+    function toggleTabsMenu(direction) {
+      if (direction === 'left') {
+        currentIndex = (currentIndex === 0) ? tabs.length - 1 : currentIndex - 1;
+      } else if (direction === 'right') {
+        currentIndex = (currentIndex === tabs.length - 1) ? 0 : currentIndex + 1;
+      }
+      updateActiveTab();
+      showGallery(tabs[currentIndex].textContent);
+    }
+
+    function showGallery(category) {
+      // Cập nhật nội dung trong <p> theo tên tab được chọn
+      tabInfoElement.textContent = 'Tab đang chọn: ' + category;
+
+      // Hiển thị nội dung tương ứng với tab
+      const galleryContainer = document.getElementById('gallery-container');
+      galleryContainer.innerHTML = `<p>Nội dung danh mục: ${category}</p>`;
+    }
+
+    // Khởi tạo tab đầu tiên
+    updateActiveTab();
+  </script>
+</body>
+</html>

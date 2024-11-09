@@ -13,7 +13,7 @@ header {
   top: 0;
 }
 nav {
-  margin-top: 90px;
+  margin-top: 120px;
   width: 100%;
   height: 50px;
   background-color: #f0f0f0;
@@ -303,9 +303,10 @@ a > .dat-ngay {
 .uu-dai {
   scroll-margin-top: 140px;
   padding: 40px;
+  width: 100%;
 }
 .uu-dai-01 {
-  width: 31.5%;
+  width: 355px;
 }
 .img-uu-dai {
   width: 355px;
