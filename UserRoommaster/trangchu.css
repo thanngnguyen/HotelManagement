@@ -1,0 +1,385 @@
+
+#main-header{
+    padding:10px 0px;
+    height:120px;
+    transition: all 0.5s;
+}
+.header-small {
+    height: 80px;
+}
+.header-small .img-logo {
+    width: 70px;
+    transition: all 0.5s ease-in-out;
+}
+#main-header.header-small{
+    height: 100px;
+}
+.img-logo{
+    width:100px;
+    transition: all 0.5s;
+}
+.login,.contact{
+    padding: 30px 0px;
+    transition: padding 0.5s;
+}
+.header-small .login,.header-small .contact{
+    padding: 10px 0px;
+}
+.navbarHeader.header-small{
+    margin-top: 80px;
+    transition: 0.5s;
+    height: 60px;
+}
+/* Thanh item anh */
+main{
+    margin-top: 120px;
+}
+.item_img {
+    width: 100%;
+    position: relative;
+
+}
+.item_img>img{
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: 0.2s;
+    transform-origin: top left;
+}
+.item_img:hover>img{
+    transform: scale(1.05);
+    filter: blur(10px);
+    z-index: 1 ;
+}
+.text_content_img{
+    position: absolute;
+    top:0;
+    left :0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    opacity: 0;
+    transition: 0.2s;
+    color:aliceblue;
+    z-index: 2;
+}
+.text_content_img:hover{
+    opacity: 1;
+}
+.main-container{
+    width: 100%;
+    margin: 100px auto 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text_content_img > *{
+    transform: translateY(-25px);
+    transition: 0.4s;
+
+}
+.item_img:hover>.text_content_img > *{
+    transform:translateY(0px);
+    z-index: 4;
+}
+.background-overlay{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s;
+    top:0;
+    left: 0;
+    position: absolute;
+}
+.item_img:nth-child(1) .background-overlay,.item_img:nth-child(1) img {
+    transform-origin: top left; 
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+.item_img:nth-child(2) .background-overlay,.item_img:nth-child(2) img {
+    transform-origin: top right; 
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+}
+.item_img:hover>.text_content_img>.background-overlay{
+    opacity: 1;
+    transform: scale(1.05);
+    top :0;
+    left: 0;
+    z-index: 3;
+}
+.text_title {
+    position: absolute;
+    top: 120px; 
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+}
+.item_img:nth-child(1) .text_title{
+    text-align: right;
+    right :0px;
+}
+.item_img:nth-child(2) .text_title{
+    text-align: left;
+    left :0px;
+}
+/* Phần mô tả văn bản */
+.text_description {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 440px;
+    margin-top: 80px;
+}
+.item_img:nth-child(1) .text_description{
+    text-align: left;
+    margin-left: -100px;
+}
+.item_img:nth-child(2) .text_description{
+    text-align: right;
+    
+    margin-top: 100px;
+    margin-right: -100px;
+}
+/* Văn bản viết tay ở góc dưới trái */
+.text_subtitle {
+    font-size: 80px;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    opacity: 0.9;
+}
+.item_img:nth-child(1):hover .text_subtitle{
+    right: 0px;
+    transform: translateX(200px);
+}
+.item_img:nth-child(2):hover .text_subtitle{
+    left:0px;
+    transform: translateX(-200px);
+}
+
+@media (max-width: 1000px) {
+    .text_description{
+        display: none;
+    }
+    .item_img:nth-child(1) .text_description,.item_img:nth-child(2) .text_description{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+    }
+    .text_title ,.text_subtitle{
+        position: static;
+    }
+    .item_img:nth-child(1):hover .text_subtitle,.item_img:nth-child(2):hover .text_subtitle{
+        transform: translate(80px, 0px);
+        font-size: 30px;
+    }
+    .text_content_img{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .item_img:nth-child(1) .text_subtitle{
+        transform: translate(80px, -60px);
+        font-size: 40px;
+    }
+    .text_description{
+        display:inline-block;
+    }
+    .text_description{
+        font-size: 16px;
+    }
+    .main-container{
+        flex-direction: row; /* Các phần tử được sắp xếp theo chiều ngang */
+        flex-wrap: wrap;
+    }
+    .text_content_img{
+        flex-direction: column;
+    }
+    .item_img:nth-child(1):hover .text_subtitle,.item_img:nth-child(2):hover .text_subtitle{
+        transform: translate(80px, 0px);
+        font-size: 40px;
+    }
+}
+/* Thanh điều hướng cho các tiêu đề */
+.nav-tabs {
+    width: 80%; 
+    margin: 100px auto 30px;
+}
+.nav-tabs >.tab{
+    font-size: 25px;
+}
+.nav-tabs div {
+    cursor: pointer;
+    color: #999;
+    font-size: 20px;
+}
+.nav-tabs .active {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+.nav-tabs .tab:hover:not(.active){
+    color:#a90b0b;
+    border-bottom: 2px solid #a90b0b;   
+}
+.toggle-tabs {
+    display: none; /* Ẩn nút khi màn hình lớn */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .tabs-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .nav-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 1000px) {
+    .toggle-tabs{
+        flex :1;
+    }
+    .tabs-menu {
+      display: flex;
+      justify-content: center;
+      width: 100%;  
+    }
+
+    .tab {
+      display: none; /* Ẩn tất cả các tab trên màn hình nhỏ */
+    }
+
+    /* Chỉ hiển thị tab hiện tại */
+    .tab.active {
+      display: inline-block;
+    }
+
+    /* Hiển thị các nút điều hướng */
+    .toggle-tabs {
+      display: inline-block;
+    }
+    .gallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+/* Container chính cho các mục */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto 200px auto;
+    gap:10px;
+    width: 80%;
+}
+
+/* Phong cách cho từng mục */
+.gallery-item {
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+/* Hình ảnh */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    display: block; 
+}
+/* Hiệu ứng khi di chuột vào ảnh */
+.gallery-item {
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; 
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.686);
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 5px;
+  }
+
+  .gallery-item:hover .overlay {
+    opacity: 1;; /* Màu đen với độ trong suốt */
+  }
+
+  .gallery_text {
+    position: absolute;
+    top : 0;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    text-align: center;
+    opacity: 0;
+    z-index: 3;
+    text-transform: uppercase;
+    font-weight: 10px;
+    letter-spacing: 2px;
+  }
+  .gallery-item:hover .gallery_text {
+    opacity: 1; /* Màu đen với độ trong suốt */
+  }
+  .img_hover {
+    display: inline-block;
+    height: 120px;
+    width: 25%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0px; /* Khoảng cách phía trên ảnh */
+    z-index: 3;
+  }
+  .gallery-item:nth-child(1)>.overlay{
+    background-color: rgba(36, 33, 33, 0.686);
+  }
+  .gallery-item:nth-child(2)>.overlay{
+    background-color: rgba(19, 5, 86, 0.77);
+  }
+  .gallery-item:nth-child(3)>.overlay{
+    background-color: rgba(25, 95, 95, 0.686);
+  }
+  .gallery-item:nth-child(4)>.overlay{
+    background-color: rgba(9, 79, 119, 0.744);
+  }
+  
