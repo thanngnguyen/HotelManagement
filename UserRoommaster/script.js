@@ -1,5 +1,5 @@
 const lgname = document.getElementById("lgname");
-const storedUsername = localStorage.getItem("username");
+const storedUsername = sessionStorage.getItem("username");
 if (storedUsername) {
   lgname.innerHTML = `<i class="fas fa-user-circle"></i> ${storedUsername}`;
 }
@@ -74,9 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sự kiện tăng số phòng
   increaseBtn.addEventListener("click", function () {
-    console.log("hehe");
     let currentValue = parseInt(roomCount.value);
-    if (currentValue < 80) {
+    if (currentValue < 70) {
       // Giới hạn số lượng phòng tối đa là 80
       roomCount.value = currentValue + 1;
     }
