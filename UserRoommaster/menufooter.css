@@ -1,0 +1,15 @@
+main {
+  padding: 20px;
+  margin-top: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+table {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse; /* đảm bảo các ô không có khoảng cách */
+}
+th,
+td {
+  border: 1px solid black;
+}

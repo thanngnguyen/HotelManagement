@@ -141,3 +141,46 @@ links.forEach((link) => {
     this.classList.add("li-after");
   });
 });
+
+// Khởi tạo Swiper
+let swiper = new Swiper(".swiper-container", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  speed: 500,
+});
+
+// Khởi tạo Swiper cho từng slider
+const swipers = [];
+document.querySelectorAll(".swiper-container").forEach((container, index) => {
+  swipers[index] = new Swiper(container, {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 500,
+  });
+});
+
+// Hàm để hiển thị/ẩn các phần tử nội dung theo ID
+function toggleContent(contentId) {
+  document.querySelectorAll(".outer-container").forEach((container) => {
+    container.style.display = "none"; // Ẩn tất cả các phần tử
+  });
+  document.getElementById(contentId).style.display = "flex"; // Hiển thị phần tử được chọn
+}
+
+// Ẩn khi nhấn bên ngoài phần nội dung
+document.addEventListener("click", function (event) {
+  if (
+    !event.target.closest(".outer-container") &&
+    !event.target.classList.contains("show-content-image")
+  ) {
+    document.querySelectorAll(".outer-container").forEach((container) => {
+      container.style.display = "none";
+    });
+  }
+});
