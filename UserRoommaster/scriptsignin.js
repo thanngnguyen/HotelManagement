@@ -1,9 +1,7 @@
 const email = document.getElementsByName("email")[0];
 const pass = document.getElementById("password");
-const mess = document.getElementById("message");
 
 function check(event) {
-  // Prevent form submission
   event.preventDefault();
 
   let e = email.value.trim();
@@ -14,38 +12,16 @@ function check(event) {
     return;
   }
 
-  if (!validateEmail(e)) {
-    alert("Email không hợp lệ");
-    return;
-  }
+  let accounts = JSON.parse(localStorage.getItem("accounts")) || [];
 
-  if (!checkPassword(p)) {
-    if (p.length < 8) {
-      mess.textContent = "Mật khẩu phải có ít nhất 8 ký tự.";
-    } else {
-      mess.textContent =
-        "Mật khẩu phải bao gồm chữ in hoa, chữ thường, số và ký tự đặc biệt.";
-    }
-    mess.style.color = "red";
-    return;
-  } else {
-    mess.textContent = "Mật khẩu hợp lệ.";
-    mess.style.color = "green";
-    alert("Đăng Nhập thành công!");
+  let account = accounts.find(acc => acc.email === e && acc.password === p);
+
+  if (account) {
+    let temp = accounts.find(acc => acc.email === e);
+    sessionStorage.setItem("username", temp.username);
+    alert("Đăng nhập thành công");
     window.location.href = "index.html";
+  } else {
+    alert("Email hoặc mật khẩu không đúng!");
   }
-}
-
-function checkPassword(password) {
-  const cHoa = /[A-Z]/.test(password);
-  const cThuong = /[a-z]/.test(password);
-  const cSo = /\d/.test(password);
-  const kytu = /[!@#$%^&*(),.?":{}|<>]/.test(password);
-
-  return password.length >= 8 && cHoa && cThuong && cSo && kytu;
-}
-
-function validateEmail(email) {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return regex.test(email);
 }

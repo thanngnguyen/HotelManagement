@@ -178,9 +178,6 @@
               <form action="#">
                 <label for="nguoilon">Người lớn</label>
                 <select id="nguoilon" name="nguoilon">
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
                 </select>
               </form>
             </div>
@@ -188,10 +185,6 @@
               <form action="#">
                 <label for="treem">Trẻ em</label><br />
                 <select id="treem" name="treem">
-                  <option value="zero">0</option>
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
                 </select>
               </form>
             </div>
@@ -199,10 +192,6 @@
               <form action="#">
                 <label for="embe">Em bé (0-5 tuổi)</label>
                 <select id="embe" name="embe">
-                  <option value="zero">0</option>
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
                 </select>
               </form>
             </div>
@@ -222,7 +211,7 @@
               <p>4 nguời</p>
             </div>
             <div class="value_money line_text">
-              <p class="sale">3.388,000 VNĐ</p>
+              <p class="sale">3,388,000 VNĐ</p>
               <br />
               <p class><b class="gia-tien">1,588,000 VNĐ</b></p>
             </div>
@@ -358,5 +347,26 @@
       </div>
     </footer>
     <script src="../script.js"></script>
+    <script src="script.js"></script>
+    <script>
+      for (var i = 1; i <= 3; i++) {
+          var option = document.createElement("option");
+          option.value = i;
+          option.text = i;
+          document.getElementById("nguoilon").appendChild(option);
+      }
+      for (var i = 0; i <= 2; i++) {
+          var option = document.createElement("option");
+          option.value = i;
+          option.text = i;
+          document.getElementById("treem").appendChild(option);
+      }
+      for (var i = 0; i <= 1; i++) {
+          var option = document.createElement("option");
+          option.value = i;
+          option.text = i;
+          document.getElementById("embe").appendChild(option);
+      }
+    </script>
   </body>
 </html>
