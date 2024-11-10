@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider with Service Info</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      /* Container tổng thể với border và padding */
+      .outer-container {
+        max-width: 1000px;
+        background-color: #ffffff;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        gap: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999; /* Giá trị cao để ở lớp trên cùng */
+        display: none; /* Ẩn ban đầu */
+      }
+
+      /* Container chính chứa slide và dịch vụ */
+      .gallery-container {
+        display: block;
+        gap: 20px;
+        width: 60%;
+      }
+
+      /* Slide Swiper */
+      .swiper-container {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài */
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      /* Thumbnails nằm ngay bên dưới slide chính */
+      .thumbnails {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .thumbnail {
+        width: 80px;
+        height: 60px;
+        cursor: pointer;
+        opacity: 0.6;
+        border-radius: 4px;
+        transition: opacity 0.3s;
+      }
+
+      .thumbnail:hover {
+        opacity: 1;
+      }
+
+      /* Phần thông tin dịch vụ */
+      .service-info {
+        width: 35%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: left;
+        overflow-y: auto;
+        max-height: 500px;
+      }
+
+      .service-info h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .service-info ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .service-info ul li {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+      }
+
+      .service-info ul li::before {
+        content: "✔️";
+        margin-right: 10px;
+      }
+
+      /* Ảnh hiển thị */
+      .show-content-image {
+        display: block;
+        /* margin: 20px auto; */
+        width: 150px;
+        height: auto;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+
+      .show-content-image:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hình ảnh hiển thị để mở nội dung -->
+    <img
+      src="/image/deluxe-triple.jpg"
+      alt="Phòng Deluxe Triple"
+      class="show-content-image"
+      onclick="toggleContent('content1')"
+    />
+    <img
+      src="/image/deluxe-king.jpg"
+      alt="Phòng Deluxe King"
+      class="show-content-image"
+      onclick="toggleContent('content2')"
+    />
+    <img
+      src="/image/apartment.jpg"
+      alt="Phòng Apartment"
+      class="show-content-image"
+      onclick="toggleContent('content3')"
+    />
+
+    <!-- Nội dung ẩn chứa thông tin của từng ảnh -->
+    <div class="outer-container" id="content1">
+      <div class="gallery-container">
+        <h3>Phòng Deluxe Triple</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/image/deluxe-triple.jpg" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/apartment.jpg" alt="Image 2" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="service-info">
+        <p>Phòng Deluxe Triple có không gian rộng rãi và thoải mái.</p>
+        <ul>
+          <li>Tủ quần áo</li>
+          <li>Wifi</li>
+          <li>Bàn làm việc</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="outer-container" id="content2">
+      <div class="gallery-container">
+        <h3>Phòng Deluxe King</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/image/deluxe-king.jpg" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/apartment.jpg" alt="Image 2" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="service-info">
+        <p>Phòng Deluxe King sang trọng với không gian thoáng đãng.</p>
+        <ul>
+          <li>Quầy bar mini</li>
+          <li>Két sắt</li>
+          <li>Khăn tắm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="outer-container" id="content3">
+      <div class="gallery-container">
+        <h3>Phòng Apartment</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/image/apartment.jpg" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/deluxe-king.jpg" alt="Image 2" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="service-info">
+        <p>Phòng Apartment với đầy đủ tiện nghi hiện đại.</p>
+        <ul>
+          <li>Bồn tắm</li>
+          <li>Máy sấy tóc</li>
+          <li>Điện thoại</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Khởi tạo Swiper cho từng slider
+      const swipers = [];
+      document
+        .querySelectorAll(".swiper-container")
+        .forEach((container, index) => {
+          swipers[index] = new Swiper(container, {
+            loop: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            speed: 500,
+          });
+        });
+
+      // Hàm để hiển thị/ẩn các phần tử nội dung theo ID
+      function toggleContent(contentId) {
+        document.querySelectorAll(".outer-container").forEach((container) => {
+          container.style.display = "none"; // Ẩn tất cả các phần tử
+        });
+        document.getElementById(contentId).style.display = "flex"; // Hiển thị phần tử được chọn
+      }
+
+      // Ẩn khi nhấn bên ngoài phần nội dung
+      document.addEventListener("click", function (event) {
+        if (
+          !event.target.closest(".outer-container") &&
+          !event.target.classList.contains("show-content-image")
+        ) {
+          document.querySelectorAll(".outer-container").forEach((container) => {
+            container.style.display = "none";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
