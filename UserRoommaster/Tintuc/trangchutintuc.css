@@ -1,3 +1,17 @@
+.main_tintuc{
+  display: flex;
+  justify-content: space-between;
+}
+.muc1{
+  width: 65%;
+  box-sizing: border-box;
+  padding: 0px;
+  
+}
+.muc2{
+  width :33%;
+  height: 490px;
+}
 /* Container chính cho các mục tin tức */
 .news-container {
     display: flex;
@@ -97,4 +111,65 @@
   }
   .list_tieubieu{
     display: flex;flex-direction:row;flex-wrap:wrap ; 
+  }
+  /* ưu đãi */
+  .card-text .text-decoration-none h6{
+    color : #008f9d
+  }
+  /* muc 2 */
+  .muc2_1{
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 5px 5% 28px 5%;
+  }
+  .muc2_tieude{
+    color: rgb(47, 80, 80);
+    text-align: center; 
+    margin-top:10px
+  }
+  .thanhngang{
+    height: 3px;
+    background-color:rgb(47, 80, 80) ;
+    opacity: 1;
+    margin: 0px 0px 5px;
+  }
+  .div_button{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  .muc2 .muc2_1 .list_tintucmoi li:hover{
+    color :#008f9d
+  }
+
+  /* Xemtiep  */
+  .xemtiep{
+    margin-bottom: 10px;
+    width: 40%;
+    background-color: #976b0e;
+    height: 35px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    border: 0;
+  }
+  .xemtiep:hover{
+    background-color: gray;
+  }
+  .leftmargin5px{
+    margin-left: 5px;
+  }
+  .list_nenxem{
+    width: 80%;
+  }
+  .list_nenxem .a_begin{
+    color : brown;
+    font-weight: bold;
+  }
+  .list_nenxem .a_begin:hover{
+    color : #20266e;
+    text-decoration: underline;
+    font-weight: bolder;
   }

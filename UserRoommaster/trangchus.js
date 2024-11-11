@@ -195,7 +195,7 @@ function showGallery(type) {
       galleryItem.innerHTML = `
       <a target="_blank" class ="a_begin" href="${item.link}">
       <div class="gallery_block_text" style="width:250px;">
-          <h3 class="text_resort">${item.text_resort}</h3>
+          <h4 class="text_resort">${item.text_resort}</h4>
           </div>
         <div class="gallery-item_block_img">
         <img src="${item.image}" alt="${item.title}" style="max-width:250px; height: 200px; object-fit: cover;border-radius: 8px;">
