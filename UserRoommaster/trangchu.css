@@ -456,6 +456,6 @@ main{
 }
 /* nghỉ dưỡng */
 .gallery-item_block:hover .gallery_block_text > .text_resort{
-    margin-top :7px;
-    transition: all 0.5s ease-in-out;
+    margin-top :-10px;
+    transition: all 0.3s ease-in-out;
 }
