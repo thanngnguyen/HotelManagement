@@ -420,14 +420,62 @@ a > .dat-ngay {
   padding: 40px;
   width: 100%;
 }
-.uu-dai-01 {
-  width: 355px;
-}
-.img-uu-dai {
-  width: 355px;
-}
 .text-uu-dai {
   text-align: justify;
+}
+/* Chứa flip card */
+.flip-card {
+  width: 355px; /* Kích thước card */
+  height: 265px;
+  perspective: 1000px; /* Tạo hiệu ứng 3D */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s; /* Thời gian chuyển động */
+  transform-style: preserve-3d; /* Hiệu ứng 3D */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Lật mặt card */
+}
+
+/* Mặt trước, mặt sau của card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ẩn mặt khi quay */
+  border-radius: 8px; /* Tùy chọn: bo góc */
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mặt sau của card */
+.flip-card-back {
+  color: white; /* Màu chữ mặt sau */
+  transform: rotateY(180deg); /* Lật mặt sau */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.fcb-01 {
+  background-color: #00564c;
+}
+.fcb-02 {
+  background-color: #a6937e;
+}
+.fcb-03 {
+  background-color: #1a2328;
 }
 .dich-vu {
   scroll-margin-top: 140px;

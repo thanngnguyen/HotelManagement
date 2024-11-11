@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Chứa flip card */
+    .flip-card {
+      width: 300px; /* Kích thước card */
+      height: 200px;
+      perspective: 1000px; /* Tạo hiệu ứng 3D */
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s; /* Thời gian chuyển động */
+      transform-style: preserve-3d; /* Hiệu ứng 3D */
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg); /* Lật mặt card */
+    }
+
+    /* Mặt trước, mặt sau của card */
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; /* Ẩn mặt khi quay */
+      border-radius: 8px; /* Tùy chọn: bo góc */
+      overflow: hidden;
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Mặt sau của card */
+    .flip-card-back {
+      background-color: #333; /* Màu nền mặt sau */
+      color: white; /* Màu chữ mặt sau */
+      transform: rotateY(180deg); /* Lật mặt sau */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <!-- Mặt trước của ảnh -->
+        <div class="flip-card-front">
+          <img src="./image/apartment.jpg" alt="Front Image" />
+        </div>
+        <!-- Mặt sau của ảnh -->
+        <div class="flip-card-back">
+          <h3>Thông tin mặt sau</h3>
+          <p>Chi tiết hoặc mô tả về mặt sau của ảnh.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
