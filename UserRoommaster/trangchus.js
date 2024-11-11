@@ -50,19 +50,19 @@ const galleries = {
   services: [
     {link:"https://www.google.com/travel/search?q=resort%20kim%20b%C3%B4i&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72602734%2C72614662%2C72616120%2C72619927%2C72647020%2C72648289%2C72658035%2C72671093%2C72686036%2C72729615%2C72749231%2C72760082%2C72795881&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGh4SHBIUCgcI6A8QCxgUEgcI6A8QCxgVGAEyBAgAEAAqBwoFOgNWTkQ&qs=CAEyFENnc0lxUEtHbW9qVnVkZXZBUkFCOApCCRFmZrtN0uk0GkIJEanxzMKcw-7bQgkRBPWIegVl259IAFpJMkeqAUQQASoKIgZyZXNvcnQoQjIfEAEiG3bo90oC7TFvI_B50ne2xW1Z23F-8eyqibTXpjITEAIiD3Jlc29ydCBraW0gYsO0aQ&ap=MABoAboBBnByaWNlcw&ictx=111",
       image:"https://lh6.googleusercontent.com/proxy/XCqHvq0zpr9h8iSc2GdvKy6v_vW5zHcOPOItUlMQlO0Sb_P1qHy_sKowqnszjq77LBDpNX7Uvb2TY-N6LcDNUCvz47-C1XrSKF3O3r5z5xuIZp_6LumAyL2KmEtF4LYuQ9Omft7lKRr2buPkw1ddGAl2c96uAQ=w253-h168-k-no"
-   ,text_resort:"Retreats Kim Bôi",thongtin_gia:"2.206.586 ₫ | 20-21/11"
+   ,text_resort:"Retreats Kim Bôi",thongtin_gia:"2.206.586 ₫ ", thongtin_ngay:"20-21/11",
    },
    { link :"https://www.google.com/travel/search?q=resort%20ba%20vi&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72602734%2C72614662%2C72616120%2C72619927%2C72647020%2C72648289%2C72658035%2C72671093%2C72686036%2C72729615%2C72749231%2C72760082%2C72795881&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QCxgUEgcI6A8QCxgVGAEyAhAAKgcKBToDVk5E&qs=CAEyE0Nnb0k1S1gyaThHMG9NdE5FQUU4CkIJEe0H48J_0k8dQgkR9FN3J1eitI1CCRHVA_dxw7xSF1pGMkSqAUEQASoKIgZyZXNvcnQoQjIfEAEiG3dD0PGg1wwDKKrFUWKsLAB4pkidAxUGhpLxzDIQEAIiDHJlc29ydCBiYSB2aQ&ap=aAG6AQhvdmVydmlldw&ictx=111&ved=0CAAQ5JsGahcKEwiQqLGZyNOJAxUAAAAAHQAAAAAQDw",
     image:"https://lh5.googleusercontent.com/p/AF1QipOm-Z8JGalOY1lyPe3R1lTVg-uoydTIThU3pSQs=w253-h168-k-no"
-    ,text_resort:"Ba Vì Retreat",thongtin_gia:"3.690.867 ₫ | 20-21/11",
+    ,text_resort:"Ba Vì Retreat",thongtin_gia:"3.690.867 ₫ ", thongtin_ngay:"20-21/11",
   },
   { link :"https://www.google.com/travel/search?q=h%C3%B2a%20b%C3%ACnh%20resort&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72602734%2C72614662%2C72616120%2C72619927%2C72647020%2C72648289%2C72658035%2C72671093%2C72686036%2C72729615%2C72749231%2C72760082%2C72795881&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QCxgUEgcI6A8QCxgVGAEyAhAAKgcKBToDVk5E&qs=CAEyFENnc0lxUEtHbW9qVnVkZXZBUkFCOApCCRHCDDKLp75eAEIJEWZmu03S6TQaQgkRBPWIegVl259aTAgBMkiqAUUQASoKIgZyZXNvcnQoQjIeEAEiGnG3EDv-tsNMjy3XzJdZzoeiZLTcnjoq6JPVMhUQAiIRaMOyYSBiw6xuaCByZXNvcnQ&ap=aAG6AQhvdmVydmlldw&ictx=111&ved=0CAAQ5JsGahcKEwiY_LePydOJAxUAAAAAHQAAAAAQDw",
     image:"https://www.cet.edu.vn/wp-content/uploads/2019/02/villa-khong-gian-sang-trong.jpg"
-    ,text_resort:"Villas Hòa Bình",thongtin_gia:"3.833.333 ₫ | 20-21/11",
+    ,text_resort:"Villas Hòa Bình",thongtin_gia:"3.833.333 ₫ ", thongtin_ngay:"20-21/11",
   },
   { link :"https://www.traveloka.com/vi-vn/explore/destination/bien-tan-thanh/128302",
     image:"https://vanangroup.com.vn/wp-content/uploads/2024/05/Cac-phong-cach-thiet-ke-resort.webp"
-    ,text_resort:"Resort Đà Nẵng",thongtin_gia:"2.964.800 ₫ | 20-21/11",
+    ,text_resort:"Resort Đà Nẵng",thongtin_gia:"2.964.800 ₫ ", thongtin_ngay:"20-21/11",
   },
   ],
   sea : [
@@ -203,8 +203,8 @@ function showGallery(type) {
           <div class="overlay">
         </div>
         <div class="gallery_block_text" style="width:250px;">   
-          <h5 style="color: #86864a;">Giá ${item.thongtin_gia}</h5>
-        </div>
+          <h5 style="color: #606049;padding-top:5px">Giá ${item.thongtin_gia} <br/><i class="fas fa-calendar"></i> ${item.thongtin_ngay}</h5>
+        </div>  
         </a>
       `;
       container.appendChild(galleryItem);

@@ -33,6 +33,9 @@ main {
   margin-top: 140px;
   scroll-margin-top: 140px;
 }
+.fullw{
+  width: 100%;
+}
 footer {
   width: 100%;
   background-color: #000763;
