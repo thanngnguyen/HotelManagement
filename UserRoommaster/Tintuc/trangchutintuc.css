@@ -12,6 +12,12 @@
   width :33%;
   height: 490px;
 }
+.imgfill{
+  object-fit: fill;width: 100%;height: 100%;
+}
+.text_center{
+  text-align: center;
+}
 /* Container chính cho các mục tin tức */
 .news-container {
     display: flex;
@@ -169,6 +175,11 @@
     font-weight: bold;
   }
   .list_nenxem .a_begin:hover{
+    color : #20266e;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  .a_hover:hover{
     color : #20266e;
     text-decoration: underline;
     font-weight: bolder;
