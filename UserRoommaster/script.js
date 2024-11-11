@@ -59,9 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
       roomTypeInput.value = this.innerHTML; // Gán giá trị được chọn vào input
     });
   });
-
-  const decreaseBtn = document.getElementById("decrease");
-  const increaseBtn = document.getElementById("increase");
+  const decreaseBtn = document.getElementById("decreasehome");
+  const increaseBtn = document.getElementById("increasehome");
   const roomCount = document.getElementById("roomCount");
 
   // Sự kiện giảm số phòng
@@ -74,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sự kiện tăng số phòng
   increaseBtn.addEventListener("click", function () {
+    console.log("hehe");
     let currentValue = parseInt(roomCount.value);
     if (currentValue < 70) {
       // Giới hạn số lượng phòng tối đa là 80

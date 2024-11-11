@@ -146,9 +146,7 @@
                     type="text"
                     class="form-control"
                     id="roomCount"
-                    value="1"
-                    min="1"
-                    max="80"
+                    data-room="Superior_Triple"
                     readonly
                   />
                   <button
@@ -267,29 +265,19 @@
         <div class="datphong_nav_1">
           <div class="background_nav_2">
             <h5><b>Thông tin đặt phòng</b></h5>
-            <hr />
-            <p class="h5_5"><b>Phòng Phòng Superior Triple</b></p>
-            <p class="text_min"><b>16/10/2024-18/10/2024 </b>(3 ngày 2 đêm)</p>
-            <hr />
+            <hr/>
+            <p class="h5_5"><b>Apartment</b></p>
+            <p class="text_min"></p>
+            <hr/>
             <p class="h5_5"><b>Thông tin phòng</b></p>
-            <div class="line_text">
-              <p>Phòng: 1 phòng Phòng Superior Triple</p>
-              <p>1 người lớn - 0 trẻ em - 0 em bé</p>
-              <p>Phụ thu người lớn : 270.000 VNĐ/ đêm</p>
-            </div>
-            <div class="money_cancel">
-              <p><b>1.288.000VNĐ/ đêm</b></p>
-              <button class="cancel-button">
-                <span class="icon">×</span> Hủy
-              </button>
-            </div>
-            <br />
-            <hr />
+            <div class="line_text"></div>
+            <div class="money_cancel"></div>
+            <hr/>
             <div class="total">
               <b>Tổng cộng</b>
-              <span class="gia-tien">2,037,000 VNĐ</span>
+              <span class="tong-tien">3.288.000 VNĐ</span>
             </div>
-            <br />
+            <br/>
             <div>
               <button class="dat-ngay-datphong">ĐẶT NGAY</button>
             </div>
@@ -350,8 +338,6 @@
         </div>
       </div>
     </footer>
-    <script src="../script.js"></script>
-    <script src="script.js"></script>
     <script>
       for (var i = 1; i <= 3; i++) {
           var option = document.createElement("option");
@@ -372,5 +358,8 @@
           document.getElementById("embe").appendChild(option);
       }
     </script>
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+    
   </body>
 </html>
