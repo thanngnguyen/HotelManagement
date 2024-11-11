@@ -394,14 +394,17 @@ main{
     text-shadow: 2px 1px 2px rgb(226 201 201 / 51%)
     }
 .gallery-item:nth-child(2n) > .gallery_text >.diachi_text{
-    color: rgb(238 254 102 / 90%);
-    text-shadow: 2px 1px 2px rgb(255 1 1 / 97%);
+    color: rgb(253 255 232 / 74%);
+    text-shadow: 2px 1px 2px rgb(114 75 75 / 41%);
+
 }
+/* lễ hội */
 .gallery-item_block_img {
     width: 100%;margin: 0 auto;
 }
 .gallery_block_text{
     text-align: center;
+    margin: 0px;
 }
 .a_begin{
     color: inherit; /* Đặt lại màu văn bản của liên kết */
@@ -424,7 +427,7 @@ main{
     text-decoration: underline;
     color : rgb(31, 104, 82);
     transition: all 0.3s ease-in-out;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 .gallery-item_block:hover .gallery-item_block_img {
     transform:scale(1.02);
@@ -450,4 +453,9 @@ main{
     h5.khoangcach{
         font-size: 16px;;
     }
+}
+/* nghỉ dưỡng */
+.gallery-item_block:hover .gallery_block_text > .text_resort{
+    margin-top :7px;
+    transition: all 0.5s ease-in-out;
 }

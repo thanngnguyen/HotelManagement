@@ -48,18 +48,38 @@ const galleries = {
     },
   ],
   services: [
+    {link:"https://www.google.com/travel/search?q=resort%20kim%20b%C3%B4i&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72602734%2C72614662%2C72616120%2C72619927%2C72647020%2C72648289%2C72658035%2C72671093%2C72686036%2C72729615%2C72749231%2C72760082%2C72795881&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGh4SHBIUCgcI6A8QCxgUEgcI6A8QCxgVGAEyBAgAEAAqBwoFOgNWTkQ&qs=CAEyFENnc0lxUEtHbW9qVnVkZXZBUkFCOApCCRFmZrtN0uk0GkIJEanxzMKcw-7bQgkRBPWIegVl259IAFpJMkeqAUQQASoKIgZyZXNvcnQoQjIfEAEiG3bo90oC7TFvI_B50ne2xW1Z23F-8eyqibTXpjITEAIiD3Jlc29ydCBraW0gYsO0aQ&ap=MABoAboBBnByaWNlcw&ictx=111",
+      image:"https://lh6.googleusercontent.com/proxy/XCqHvq0zpr9h8iSc2GdvKy6v_vW5zHcOPOItUlMQlO0Sb_P1qHy_sKowqnszjq77LBDpNX7Uvb2TY-N6LcDNUCvz47-C1XrSKF3O3r5z5xuIZp_6LumAyL2KmEtF4LYuQ9Omft7lKRr2buPkw1ddGAl2c96uAQ=w253-h168-k-no"
+   ,text_resort:"Retreats Kim Bôi",thongtin_gia:"2.206.586 ₫ | 20-21/11"
+   },
+   { link :"https://www.google.com/travel/search?q=resort%20ba%20vi&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72602734%2C72614662%2C72616120%2C72619927%2C72647020%2C72648289%2C72658035%2C72671093%2C72686036%2C72729615%2C72749231%2C72760082%2C72795881&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QCxgUEgcI6A8QCxgVGAEyAhAAKgcKBToDVk5E&qs=CAEyE0Nnb0k1S1gyaThHMG9NdE5FQUU4CkIJEe0H48J_0k8dQgkR9FN3J1eitI1CCRHVA_dxw7xSF1pGMkSqAUEQASoKIgZyZXNvcnQoQjIfEAEiG3dD0PGg1wwDKKrFUWKsLAB4pkidAxUGhpLxzDIQEAIiDHJlc29ydCBiYSB2aQ&ap=aAG6AQhvdmVydmlldw&ictx=111&ved=0CAAQ5JsGahcKEwiQqLGZyNOJAxUAAAAAHQAAAAAQDw",
+    image:"https://lh5.googleusercontent.com/p/AF1QipOm-Z8JGalOY1lyPe3R1lTVg-uoydTIThU3pSQs=w253-h168-k-no"
+    ,text_resort:"Ba Vì Retreat",thongtin_gia:"3.690.867 ₫ | 20-21/11",
+  },
+  { link :"https://www.google.com/travel/search?q=h%C3%B2a%20b%C3%ACnh%20resort&g2lb=4814050%2C4874190%2C4893075%2C4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72473841%2C72481459%2C72485658%2C72602734%2C72614662%2C72616120%2C72619927%2C72647020%2C72648289%2C72658035%2C72671093%2C72686036%2C72729615%2C72749231%2C72760082%2C72795881&hl=vi-VN&gl=vn&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QCxgUEgcI6A8QCxgVGAEyAhAAKgcKBToDVk5E&qs=CAEyFENnc0lxUEtHbW9qVnVkZXZBUkFCOApCCRHCDDKLp75eAEIJEWZmu03S6TQaQgkRBPWIegVl259aTAgBMkiqAUUQASoKIgZyZXNvcnQoQjIeEAEiGnG3EDv-tsNMjy3XzJdZzoeiZLTcnjoq6JPVMhUQAiIRaMOyYSBiw6xuaCByZXNvcnQ&ap=aAG6AQhvdmVydmlldw&ictx=111&ved=0CAAQ5JsGahcKEwiY_LePydOJAxUAAAAAHQAAAAAQDw",
+    image:"https://www.cet.edu.vn/wp-content/uploads/2019/02/villa-khong-gian-sang-trong.jpg"
+    ,text_resort:"Villas Hòa Bình",thongtin_gia:"3.833.333 ₫ | 20-21/11",
+  },
+  { link :"https://www.traveloka.com/vi-vn/explore/destination/bien-tan-thanh/128302",
+    image:"https://vanangroup.com.vn/wp-content/uploads/2024/05/Cac-phong-cach-thiet-ke-resort.webp"
+    ,text_resort:"Resort Đà Nẵng",thongtin_gia:"2.964.800 ₫ | 20-21/11",
+  },
   ],
   sea : [
-    { image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009656.jpg?k=350b38ee5a5f178f225d363eab93c7c14fbfee30168745e7db3a5fa38cd5be0e&o="
+    {link:"https://vinpearl.com/vi/me-man-7-bai-bien-hai-phong-dep-noi-tieng",
+       image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009656.jpg?k=350b38ee5a5f178f225d363eab93c7c14fbfee30168745e7db3a5fa38cd5be0e&o="
     ,textlehoi:"Thành Phố Hải Phòng",thongtin:"Cách đây 88km"
     },
-    { image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009666.jpg?k=03bcdc06ffce1c018aa6c491745278c22dbd9df5b66b3ac9049383e4e54b8558&o="
+    { link:"https://vinpearl.com/vi/du-lich-cua-lo-nghe-an-so-tay-du-lich-tu-a-den-z",
+      image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009666.jpg?k=03bcdc06ffce1c018aa6c491745278c22dbd9df5b66b3ac9049383e4e54b8558&o="
       ,textlehoi:"Cửa Lò",thongtin:"Cách đây 245km",
     },
-    { image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009662.jpg?k=72b776fd2f897de1ff6bc4df7c9d45fb191b8d23593fa1f845c7341b5062e8ad&o="
+    { link:"https://vinpearl.com/vi/7-bai-bien-da-nang-dep-nhat-tuyet-canh-co-mot-khong-hai",
+      image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009662.jpg?k=72b776fd2f897de1ff6bc4df7c9d45fb191b8d23593fa1f845c7341b5062e8ad&o="
       ,textlehoi:"Đà Nẵng",thongtin:"Cách đây 604km",
     },
-    { image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009629.jpg?k=d7d4199619fd9b98ee00e6dba8835b8140738639c0311913cf74180abe514339&o="
+    { link :"https://www.traveloka.com/vi-vn/explore/destination/bien-tan-thanh/128302",
+      image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009629.jpg?k=d7d4199619fd9b98ee00e6dba8835b8140738639c0311913cf74180abe514339&o="
       ,textlehoi:"Tân Thành",thongtin:"Cách đây 627km",
     },
   ],
@@ -93,7 +113,7 @@ function showGallery(type) {
   container.innerHTML = "";
 
   // Lấy danh sách item từ galleries theo loại tab
-  const items = galleries[type];
+  const items = galleries[type];//các thương hiệu
   if (type === 'brands') {
     items.forEach(item => {
       const galleryItem = document.createElement("div");
@@ -113,7 +133,7 @@ function showGallery(type) {
       container.appendChild(galleryItem);
     });
   } 
-  else if(type === 'destinations'){
+  else if(type === 'destinations'){// điểm đến
     items.forEach(item => {
       const galleryItem = document.createElement("div");
       galleryItem.className = "gallery-item";
@@ -168,8 +188,25 @@ function showGallery(type) {
       container.appendChild(galleryItem);
     });
   }
-  else if(type ==='services'){
-    
+  else if(type ==='services'){//nghiduong
+    items.forEach(item => {
+      const galleryItem = document.createElement("div");
+      galleryItem.className = "gallery-item_block";
+      galleryItem.innerHTML = `
+      <a target="_blank" class ="a_begin" href="${item.link}">
+        <div class="gallery-item_block_img">
+        <img src="${item.image}" alt="${item.title}" style="max-width:250px; height: 200px; object-fit: cover;border-radius: 8px;">
+        </div>
+          <div class="overlay">
+        </div>
+        <div class="gallery_block_text" style="width:250px;">
+          <h3 class="text_resort">${item.text_resort}</h3>
+          <h5 style="color: #86864a;">${item.thongtin_gia}</h5>
+        </div>
+        </a>
+      `;
+      container.appendChild(galleryItem);
+    });
   }
 
   // Cập nhật trạng thái nút đã chọn
