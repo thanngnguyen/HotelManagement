@@ -136,6 +136,7 @@ footer {
   justify-content: center;
   background-color: #ffffff;
   margin: -40px 50px 0 50px;
+  flex-wrap: wrap;
   border-radius: 6px;
   padding: 10px;
   z-index: 2;

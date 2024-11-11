@@ -37,7 +37,6 @@ main{
 .item_img {
     width: 100%;
     position: relative;
-
 }
 .item_img>img{
     width: 100%;
@@ -163,7 +162,7 @@ main{
     transform: translateX(-200px);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     .text_description{
         display: none;
     }
@@ -183,21 +182,28 @@ main{
     .text_content_img{
         flex-direction: column;
     }
+    .gallery-item{
+        width: 320px;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .item_img:nth-child(1) .text_subtitle{
         transform: translate(80px, -60px);
         font-size: 40px;
     }
-    .text_description{
+    .item_img .text_description{
         display:inline-block;
-    }
-    .text_description{
         font-size: 16px;
+
     }
     .main-container{
         flex-direction: row; /* Các phần tử được sắp xếp theo chiều ngang */
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .item_img:nth-child(2) .text_description{
+        text-align: left;
     }
     .text_content_img{
         flex-direction: column;
@@ -285,8 +291,8 @@ main{
 .gallery {
     display: flex;
     justify-content: space-around;
-    margin: 0px auto 200px auto;
-    gap:10px;
+    margin: 0px auto 100px auto;
+    gap:20px;
     width: 80%;
 }
 
@@ -382,4 +388,58 @@ main{
   .gallery-item:nth-child(4)>.overlay{
     background-color: rgba(9, 79, 119, 0.744);
   }
-  
+  /* Diem den */
+.gallery-item:nth-child(2n+1) > .gallery_text >.diachi_text{
+    color: rgb(99 191 176);
+    text-shadow: 2px 1px 2px rgb(226 201 201 / 51%)
+    }
+.gallery-item:nth-child(2n) > .gallery_text >.diachi_text{
+    color: rgb(238 254 102 / 90%);
+    text-shadow: 2px 1px 2px rgb(255 1 1 / 97%);
+}
+.gallery-item_block_img {
+    width: 100%;margin: 0 auto;
+}
+.gallery_block_text{
+    text-align: center;
+}
+.a_begin{
+    color: inherit; /* Đặt lại màu văn bản của liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-weight: normal
+}
+.gallery-item_block{
+    flex:1;
+}
+.gallery_block_text > p {
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;          /* Ẩn phần văn bản vượt quá */
+    text-overflow: ellipsis;  
+    text-indent: 1em;
+}
+.gallery-item_block:hover .gallery_block_text > .thongtin ,.gallery-item_block:hover .gallery_block_text > .khoangcach{
+    text-decoration: underline;
+    color : rgb(31, 104, 82);
+    transition: all 0.3s ease-in-out;
+    margin-top: 2px;
+}
+.gallery-item_block:hover .gallery-item_block_img {
+    transform:scale(1.02);
+    transition: all 0.4s;
+}
+.gallery-item_block:hover .gallery_block_text > h4{
+    margin-top: 5px;
+    transition: all 0.4s ease;
+}
+@media (max-width:1520px) {
+    .gallery-item_block_img {
+        width: 244px
+    } 
+    .gallery-item_block .gallery_block_text{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
