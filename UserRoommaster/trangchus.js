@@ -62,9 +62,6 @@ const galleries = {
     { image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140009629.jpg?k=d7d4199619fd9b98ee00e6dba8835b8140738639c0311913cf74180abe514339&o="
       ,textlehoi:"Tân Thành",thongtin:"Cách đây 627km",
     },
-    { image:"https://cf.bstatic.com/xdata/images/xphoto/300x240/140051785.jpg?k=3405c60b82998daeeba1bc3cc635906d4a9fcf0c1ef87d92e886acc9e7466cb5&o="
-      ,textlehoi:"Lăng Cô",thongtin:"Cách đây 581km",
-    },
   ],
 };
 let currentIndex = 0; // Chỉ số tab hiện tại
