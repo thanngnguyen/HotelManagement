@@ -171,6 +171,9 @@ function showGallery(type) {
       container.appendChild(galleryItem);
     });
   }
+  else if(type ==='services'){
+    
+  }
 
   // Cập nhật trạng thái nút đã chọn
   document.querySelectorAll(".nav-tabs .tab").forEach(tab => {
