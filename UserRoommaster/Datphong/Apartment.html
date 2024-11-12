@@ -45,7 +45,7 @@
         <div class="contact-info">
           <a href="tel:0972857436"
             ><i class="fas fa-phone-alt"></i>
-            <p class="tell">+19008086</p>
+            <p class="tell">+  8086</p>
           </a>
         </div>
         <div class="social-icons">
@@ -170,8 +170,8 @@
               </div>
             </div>
           </form>
-          <div class="chon_nguoi">
-            <p><b>Chọn số người phòng 1</b></p>
+          <div id="chon_nguoi">
+            <!-- <p><b>Chọn số người phòng 1</b></p>
             <div class="input-group">
               <form action="#">
                 <label for="nguoilon">Người lớn</label>
@@ -192,7 +192,7 @@
                 <select id="embe" name="embe">
                 </select>
               </form>
-            </div>
+            </div> -->
           </div>
           <br />
           <div class="datphong_div2_1-thongtin line_text">
@@ -262,16 +262,15 @@
           <div class="background_nav_2">
             <h5><b>Thông tin đặt phòng</b></h5>
             <hr/>
-            <p class="h5_5"><b>Apartment</b></p>
+            <p class="h5_5"></p>
             <p class="text_min"></p>
             <hr/>
             <p class="h5_5"><b>Thông tin phòng</b></p>
             <div class="line_text"></div>
-            <div class="money_cancel"></div>
             <hr/>
             <div class="total">
               <b>Tổng cộng</b>
-              <span class="tong-tien">3.288.000 VNĐ</span>
+              <span class="tong-tien"></span>
             </div>
             <br/>
             <div>
@@ -334,26 +333,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      for (var i = 1; i <= 6; i++) {
-          var option = document.createElement("option");
-          option.value = i;
-          option.text = i;
-          document.getElementById("nguoilon").appendChild(option);
-      }
-      for (var i = 0; i <= 3; i++) {
-          var option = document.createElement("option");
-          option.value = i;
-          option.text = i;
-          document.getElementById("treem").appendChild(option);
-      }
-      for (var i = 0; i <= 2; i++) {
-          var option = document.createElement("option");
-          option.value = i;
-          option.text = i;
-          document.getElementById("embe").appendChild(option);
-      }
-    </script>
     <script src="../script.js"></script>
     <script src="script.js"></script>
   </body>
