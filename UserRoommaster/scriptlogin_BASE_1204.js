@@ -5,15 +5,15 @@ const pass = document.getElementById("password");
 const mess = document.getElementById("message");
 const lgname = document.getElementById("lgname");
 
-sessionStorage.removeItem("username");
-
 function check(event) {
+  // Prevent form submission
   event.preventDefault();
 
   let fn = fname.value.trim();
   let ln = lname.value.trim();
   let e = email.value.trim();
   let p = pass.value.trim();
+  //   let lg = lgname.value.trim();
 
   if (!fn || !ln || !e || !p) {
     alert("Bạn chưa điền đầy đủ thông tin");
@@ -38,8 +38,7 @@ function check(event) {
     mess.textContent = "Mật khẩu hợp lệ.";
     mess.style.color = "green";
     alert("Đăng ký thành công!");
-		addAccount(`${fn} ${ln}`, e, p)
-		sessionStorage.setItem("username", `${fn} ${ln}`)
+    localStorage.setItem("username", `${fn} ${ln}`);
     window.location.href = "index.html";
   }
 }
@@ -56,18 +55,4 @@ function checkPassword(password) {
 function validateEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
-}
-
-function addAccount(username, email, password) {
-  let accounts = JSON.parse(localStorage.getItem("accounts")) || [];
-
-  let newAccount = {
-    username: username,
-    email: email,
-    password: password
-  };
-
-  accounts.push(newAccount);
-
-  localStorage.setItem("accounts", JSON.stringify(accounts));
 }

@@ -23,7 +23,6 @@
 }
 .input-group select {
   padding: 5px 16px;
-  border-radius: 10px;
 }
 .fa-solid.fa-check {
   color: green;
@@ -98,11 +97,11 @@
   display: flex;
   justify-content: space-between;
 }
-.chon_nguoi {
+#chon_nguoi {
   display: flex;
-  justify-content: space-between;
-  justify-self: start;
-  gap: 20px;
+  flex-direction: column;
+
+  width: 100%;
 }
 .background_nav_2 {
   width: 80%;
@@ -122,7 +121,7 @@ hr {
   border: 20px 5px;
 }
 .text_min {
-  font-size: 13px;
+  font-size: 14px;
 }
 form {
   margin: 0px;
@@ -145,12 +144,6 @@ form {
     display: flex;
     flex-wrap: wrap;
   }
-  .chon_nguoi {
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: flex-start;
-    width: 100%;
-  }
   .thongtin_img {
     width: 100%;
   }
@@ -160,4 +153,12 @@ form {
   .thongtin_ngaythang > :nth-child(3) {
     width: 5;
   }
+}
+.datphong_nav_1 {
+  position: sticky;
+  top: 95px;
+}
+.room-div:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
 }

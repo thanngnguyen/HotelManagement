@@ -488,6 +488,11 @@ a > .dat-ngay {
   color: #ffba22;
   font-size: 22px;
 }
+.tong-tien {
+  color: #ffba22;
+  font-size: 22px;
+  font-weight: bolder;
+}
 .uu-dai {
   scroll-margin-top: 140px;
   padding: 40px;

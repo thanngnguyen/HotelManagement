@@ -39,6 +39,13 @@
     <link rel="stylesheet" href="../datphong.css" />
   </head>
   <body>
+    <div class="loader" id="loader">
+      <div class="loader-wrapper">
+        <img src="/image/logo-loading.png" alt="Logo" class="loader-logo" />
+        <div class="loader-ring"></div>
+        <!-- Vòng tia sáng quay quanh logo -->
+      </div>
+    </div>
     <header>
       <!-- Liên hệ -->
       <div class="contact">
@@ -142,10 +149,8 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="roomCount"
-                    value="1"
-                    min="1"
-                    max="80"
+                    id="roomCount" 
+                    data-room="Deluxe_Twin"
                     readonly
                   />
                   <button
@@ -172,41 +177,7 @@
               </div>
             </div>
           </form>
-          <div class="chon_nguoi">
-            <p><b>Chọn số người phòng 1</b></p>
-            <div class="input-group">
-              <form action="#">
-                <label for="nguoilon">Người lớn</label>
-                <select id="nguoilon" name="nguoilon">
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                </select>
-              </form>
-            </div>
-            <div class="input-group">
-              <form action="#">
-                <label for="treem">Trẻ em</label><br />
-                <select id="treem" name="treem">
-                  <option value="zero">0</option>
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                </select>
-              </form>
-            </div>
-            <div class="input-group">
-              <form action="#">
-                <label for="embe">Em bé (0-5 tuổi)</label>
-                <select id="embe" name="embe">
-                  <option value="zero">0</option>
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                </select>
-              </form>
-            </div>
-          </div>
+          <div id="chon_nguoi"></div>
           <br />
           <div class="datphong_div2_1-thongtin line_text">
             <div>
@@ -274,29 +245,18 @@
         <div class="datphong_nav_1">
           <div class="background_nav_2">
             <h5><b>Thông tin đặt phòng</b></h5>
-            <hr />
-            <p class="h5_5"><b>Phòng Deluxe Twin</b></p>
-            <p class="text_min"><b>16/10/2024-18/10/2024 </b>(3 ngày 2 đêm)</p>
-            <hr />
+            <hr/>
+            <p class="h5_5"></p>
+            <p class="text_min"></p>
+            <hr/>
             <p class="h5_5"><b>Thông tin phòng</b></p>
-            <div class="line_text">
-              <p>Phòng: 1 phòng Deluxe Twin</p>
-              <p>1 người lớn - 0 trẻ em - 0 em bé</p>
-              <p>Phụ thu người lớn : 270.000 VNĐ/ đêm</p>
-            </div>
-            <div class="money_cancel">
-              <p><b>1.288.000VNĐ/ đêm</b></p>
-              <button class="cancel-button">
-                <span class="icon">×</span> Hủy
-              </button>
-            </div>
-            <br />
-            <hr />
+            <div class="line_text"></div>
+            <hr/>
             <div class="total">
               <b>Tổng cộng</b>
-              <span class="gia-tien">2,037,000 VNĐ</span>
+              <span class="tong-tien"></span>
             </div>
-            <br />
+            <br/>
             <div>
               <button class="dat-ngay-datphong">ĐẶT NGAY</button>
             </div>
@@ -358,5 +318,7 @@
       </div>
     </footer>
     <script src="../script.js"></script>
+    <script src="script.js"></script>
+    
   </body>
 </html>
