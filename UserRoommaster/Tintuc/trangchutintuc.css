@@ -10,7 +10,6 @@
 }
 .muc2{
   width :33%;
-  height: 490px;
 }
 .imgfill{
   object-fit: fill;width: 100%;height: 100%;
@@ -184,3 +183,23 @@
     text-decoration: underline;
     font-weight: bolder;
   }
+  /* Cho cac trang tin tuc  */
+  .thumuc_tieude h5:nth-child(1){
+    color:rgb(184, 134, 11);
+    font-weight: bold;
+  }
+  .baivietlienquan{
+    background-color: #ececec;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 20px 0px 10px 20px;
+}
+.chu_y{
+  border: 1px solid red;
+  box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
+  border-radius: 10px;
+}
+.thumucnho p:nth-child(1){
+  font-weight: bold;
+}
