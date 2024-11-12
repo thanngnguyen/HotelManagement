@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 
     loader.style.display = "none"; // Ẩn màn hình chờ
     content.style.opacity = "1"; // Đảm bảo nội dung trở nên rõ ràng
-  }, 2000); // Đặt thời gian chờ là 3 giây
+  }, 1500); // Đặt thời gian chờ là 3 giây
 });
 
 const lgname = document.getElementById("lgname");

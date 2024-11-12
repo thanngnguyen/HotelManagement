@@ -102,6 +102,9 @@ main {
   margin-top: 140px;
   scroll-margin-top: 140px;
 }
+.fullw{
+  width: 100%;
+}
 footer {
   width: 100%;
   background-color: #000763;
@@ -205,8 +208,9 @@ footer {
   justify-content: center;
   background-color: #ffffff;
   margin: -40px 50px 0 50px;
+  flex-wrap: wrap;
   border-radius: 6px;
-  padding: 10px;
+  padding: 10px 7px;
   z-index: 2;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
