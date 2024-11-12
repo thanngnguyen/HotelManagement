@@ -278,3 +278,12 @@ function updateSelectedRooms(number) {
         ${totalPrice.toLocaleString()} VNĐ
     `;
 }
+
+document.querySelector('.dat-ngay-datphong').addEventListener('click', function() {
+    if ( document.querySelector('.tong-tien').textContent.trim() === "") {
+        alert('Vui lòng chọn phòng mong muốn');
+    } else {
+        sessionStorage.setItem('price', document.querySelector('.tong-tien').textContent.replace(/[^0-9]/g, ''));
+        window.location.href = 'payment.html';
+    }
+});
