@@ -232,6 +232,9 @@
   .muc1,.muc2{
     width: 100%;
   }
+  .baivietlienquan{
+      margin-bottom: 20px;
+  }
 }
 @media (max-width:768px) {
   .list_tieubieu{
