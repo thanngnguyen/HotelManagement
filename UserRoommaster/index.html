@@ -48,6 +48,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Màn hình chờ với logo ở giữa và tia sáng quay quanh -->
+    <div class="loader" id="loader">
+      <div class="loader-wrapper">
+        <img src="/image/logo-loading.png" alt="Logo" class="loader-logo" />
+        <div class="loader-ring"></div>
+        <!-- Vòng tia sáng quay quanh logo -->
+      </div>
+    </div>
     <header id="main-header">
       <!-- Liên hệ -->
       <div class="contact">
@@ -118,7 +126,7 @@
         </ul>
       </div>
     </nav>
-    <main id="Main">
+    <main id="Main" class="main">
       <!-- Bootstrap: slide ảnh khách sạn -->
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">

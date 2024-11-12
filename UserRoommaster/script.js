@@ -1,3 +1,13 @@
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    const loader = document.getElementById("loader");
+    const content = document.querySelector(".main");
+
+    loader.style.display = "none"; // Ẩn màn hình chờ
+    content.style.opacity = "1"; // Đảm bảo nội dung trở nên rõ ràng
+  }, 2000); // Đặt thời gian chờ là 3 giây
+});
+
 const lgname = document.getElementById("lgname");
 const storedUsername = localStorage.getItem("username");
 if (storedUsername) {
